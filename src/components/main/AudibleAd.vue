@@ -1,6 +1,6 @@
 <template>
     <section class="container-fluid bg-ad-audible">
-        <div class="row px-5 justify-content-center">
+        <div class="row px-5 pt-4 justify-content-center">
             <div class="col-8 d-flex justify-content-center clearfix">
                 <div class="w-50 float-end d-flex justify-content-end">
                     <img class="audible-screen" :src="require('@/assets/img/audible-app-2x-400x418.png')" alt="">
