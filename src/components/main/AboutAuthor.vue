@@ -18,14 +18,14 @@
             </div>
             <div class="col-4 card-item card-latest d-flex justify-content-center">
                 <div class="text-card text-center pb-4">
-                    <h2 class="text-capitalize pb-2">About me</h2>
+                    <h2 class="text-capitalize text-white pb-2">My latest book</h2>
                     <hr class="w-50">
                     <p class="text-warning">Lorem ipsum dolor, sit amet consectetur!</p>
                 </div>
             </div>
             <div class="col-4 card-item card-signing d-flex justify-content-center">
                 <div class="text-card text-center pb-4">
-                    <h2 class="text-capitalize pb-2">About me</h2>
+                    <h2 class="text-capitalize text-white pb-2">Book signing</h2>
                     <hr class="w-50">
                     <p class="text-warning">Lorem ipsum dolor, sit amet consectetur!</p>
                 </div>
