@@ -18,5 +18,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
+    footer{
+        background-image:url('@/assets/img/footer-3.jpg');
+        height: 600px;
+    }
 </style>

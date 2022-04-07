@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    name:"FooterCopyright"
+    name:"FooterCopyright",
 }
 </script>
 
