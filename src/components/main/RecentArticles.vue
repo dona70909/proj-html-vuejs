@@ -9,7 +9,7 @@
                 <button class="px-3">All Articles</button>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row  wrapper-articles  justify-content-center">
             <div class="col-6">
                 <div class="big-box">
                     <img :src="require('@/assets/img/20-Tips-400x235.jpg')" alt="">
@@ -52,26 +52,32 @@ button{
     color: white;
     border:none;
 }
-.big-box{
-    background-color:white;
-    padding: 2rem;
-    img{
-        width:100%;
-        margin-bottom: 2rem;
-    }
-}
-
-.small-box{
-    background-color:white;
-    padding-left:2rem;
-    padding-right: 2rem;
-    img{
-        width:100%;
-        margin-bottom: 2rem;
+.wrapper-articles{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    .big-box{
+        background-color:white;
+        padding: 2rem;
+        height: 100%;
+        img{
+            width:100%;
+            margin-bottom: 2rem;
+        }
     }
 
+    .small-box{
+        background-color:white;
+        padding-left:2rem;
+        padding-right: 2rem;
+        height: 50%;
+        img{
+            width:100%;
+            margin-bottom: 2rem;
+        }
+
+    }
 }
-/* reset margin p(s) */
+/*reset margin p(s) */
 p{
     margin: 0;
 }
