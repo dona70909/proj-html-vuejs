@@ -1,6 +1,6 @@
 <template>
     <section class="container-fluid">
-        <div class="row px-5 pt-5">
+        <div class="row px-5 py-5">
             <div class="col-7 px-5">
                 <div class="title-container">
                     <h3>What Critics Say</h3>
