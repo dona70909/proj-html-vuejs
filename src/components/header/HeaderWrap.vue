@@ -29,9 +29,12 @@ name:"HeaderWrap"
 
 <style lang="scss" scoped>
 header{
-    background: black;
     color:white;
-
+    background-image: url(' @/assets/img/hero-07-2x.jpg');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     ul{
         list-style: none;
 
@@ -40,5 +43,9 @@ header{
             text-decoration: none;
         }
     }
+}
+
+section{
+    
 }
 </style>
