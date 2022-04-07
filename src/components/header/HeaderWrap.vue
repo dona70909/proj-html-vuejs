@@ -24,7 +24,7 @@ export default {
 header{
     filter: grayscale(50%);
     background-image: url(' @/assets/img/hero-07-2x.jpg');
-    
+    /* height:480px;  */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
