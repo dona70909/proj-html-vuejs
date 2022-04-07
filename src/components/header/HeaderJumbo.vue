@@ -18,9 +18,14 @@
             <div class="latest-book-card px-3">
                 <div class="d-flex justify-content-around">
                     <img class="img-fluid img-kindle-book" :src="require('@/assets/img/book-widget.png')" alt="book">
-                    <p class="kindle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dignissimos voluptatum eveniet soluta labore mollitia repudiandae recusandae itaque!</p>
+                    <div class="kindle-text">
+                        <h4>Latest Book Relese</h4>
+                        <h5>D.Vaughn Autobiography</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dignissimos voluptatum eveniet soluta labore mollitia repudiandae recusandae itaque!</p>
+                    </div>
                 </div>
                 <div class="d-flex justify-content-center">
+                    
                     <button class="px-3">Buy on amazon</button>
                     <button class="px-3">buy on app store</button>
                 </div>
@@ -36,6 +41,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+/* //#  ARTICLE LEFT NEW YORK TIMES */
 .article-card-container{
     padding-left:5rem;
    /*  height: 100%; */
@@ -67,6 +74,7 @@ export default {
     }
 }
 
+/* //#  ARTICLE RughT kindle */
 .latest-book-card{
     background-color: white;
     color:black;
