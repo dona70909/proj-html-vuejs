@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1 class="text-danger">ciao</h1>
   </div>
 </template>
 
