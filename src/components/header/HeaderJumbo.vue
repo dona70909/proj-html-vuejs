@@ -26,8 +26,8 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     
-                    <button class="px-3"> <img class="amazon-logo" :src="require('@/assets/img/amazon-logo-small.png')" alt="">  Buy on amazon</button>
-                    <button class="px-3">buy on app store</button>
+                    <button class="px-3"> <a href="#/"><img class="btn-logo" :src="require('@/assets/img/amazon-logo-small.png')" alt="amazon-logo">Buy on amazon</a>  </button>
+                    <button class="px-3"><a href="#/"> <img class="btn-logo" :src="require('@/assets/img/apple-logo.png')" alt=""> Buy on app store</a></button>
                 </div>
             </div>
         </div>
@@ -94,8 +94,13 @@ export default {
     }
 }
 
-.amazon-logo{
+.btn-logo{
     height: 1rem;
+    margin-right: .2rem;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 </style>
