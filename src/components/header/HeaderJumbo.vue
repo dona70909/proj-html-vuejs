@@ -2,15 +2,15 @@
     <!-- header's child component? -->
     <div class="row justify-content-center article-card-container">
         <!-- //# container left article -->
-        <div class="col-8 col-md-8 article-card">
+        <div class="col-6 col-md-8 article-card">
             <h3>Damon Vaugh</h3>
             <p>
                 Best-selling Author and the most influential public intellectualin the western world right now.
             </p>
-            <address class="author"> By <a rel="author" href="#/">The New York Times</a></address>
+            <address class="author">-<a rel="author" href="#/">The New York Times</a></address>
         </div>
         <!-- //# container right kindle latest book and icons -->
-        <div class="col-4 col-md-4  latest-book-container px-0">
+        <div class="col-6 col-md-4  latest-book-container px-0">
             <div class="d-flex flex-column mb-4 text-white px-2">
                 <div class="demos-square align-self-end">icon</div>
                 <div class="on-sale-square align-self-end">icon</div>
@@ -19,8 +19,8 @@
                 <div class="d-flex justify-content-around">
                     <img class="img-fluid img-kindle-book" :src="require('@/assets/img/book-widget.png')" alt="book">
                     <div class="kindle-text">
-                        <h4>Latest Book Relese</h4>
-                        <h5>D.Vaughn Autobiography</h5>
+                        <h5>Latest Book Relese</h5>
+                        <h6>D.Vaughn Autobiography</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dignissimos voluptatum eveniet soluta labore mollitia repudiandae recusandae itaque!</p>
                     </div>
                 </div>
@@ -78,8 +78,8 @@ export default {
 .latest-book-card{
     background-color: white;
     color:black;
-    padding: 5rem 0rem;
-    /* height: 100%; */
+    padding: 2rem 0rem;
+    height: 100%;
 
     .img-kindle-book{
         height: 100%;
@@ -88,6 +88,9 @@ export default {
 
     .kindle-text{
         width: 50%;
+        p{
+            font-size: .8rem;
+        }
     }
 }
 
