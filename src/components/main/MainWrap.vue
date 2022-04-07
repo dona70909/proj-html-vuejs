@@ -5,6 +5,7 @@
         <CriticsSection/>
         <UpcomingSection/>
         <SubscribeNews/>
+        <AboutAuthor/>
     </main>
 </template>
 
@@ -14,6 +15,7 @@ import AudibleAd from './AudibleAd.vue'
 import CriticsSection from './CriticsSection.vue'
 import UpcomingSection from './UpcomingSection.vue'
 import SubscribeNews from './SubscribeNews.vue'
+import AboutAuthor from './AboutAuthor.vue'
 export default {
     name:"MainWrap",
     components:{
@@ -22,6 +24,7 @@ export default {
         CriticsSection,
         UpcomingSection,
         SubscribeNews,
+        AboutAuthor,
     }
 }
 </script>
