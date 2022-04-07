@@ -1,7 +1,7 @@
 <template>
     <section class="container-fluid bg-img">
-        <div class="row py-5 justify-content-center align-items-center">
-            <div class="col-5 text-center">
+        <div class="row container-row-padding justify-content-center align-items-center">
+            <div class="col-4 text-center">
                 <h2 class="text-white">Subscribe to My Newsletter</h2>
                 <h6 class="text-uppercase text-warning">Be Notified about book signing tour dates</h6>
                 <input class="email-input me-3 mb-2" type="text" placeholder="email">
@@ -21,6 +21,10 @@ export default {
 <style lang="scss" scoped>
 .bg-img{
     background-image: url('@/assets/img/banner-2.jpg');
-   /*  height: 300px; */
+    /*  height: 300px; */
+
+    .container-row-padding{
+        padding: 6rem 0;
+    }
 }
 </style>
