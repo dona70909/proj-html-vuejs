@@ -17,7 +17,8 @@
                     <p>Demos</p>
                 </div>
                 <div class="square on-sale-square align-self-end">
-                    <img src="" alt="img">
+                    <!-- <img src="" alt="img"> -->
+                    <p class="price-tag">39</p>
                     <p>On Sale</p>
                 </div>
             </div>
@@ -117,18 +118,23 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:1.7rem;
+    padding:1.5rem 0rem;
     background-color: white;
     margin-bottom:1rem;
 
     p{
         font-size: .6rem;
         font-weight: 600;
+        margin: 0;
     }
 
     img{
         font-size: .6rem;
         font-weight: 600;
+    }
+    .price-tag{
+        color: green;
+        font-size: 1rem;
     }
 }
 </style>
