@@ -26,7 +26,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     
-                    <button class="px-3">Buy on amazon</button>
+                    <button class="px-3"> <img class="amazon-logo" :src="require('@/assets/img/amazon-logo-small.png')" alt="">  Buy on amazon</button>
                     <button class="px-3">buy on app store</button>
                 </div>
             </div>
@@ -92,6 +92,10 @@ export default {
             font-size: .8rem;
         }
     }
+}
+
+.amazon-logo{
+    height: 1rem;
 }
 
 </style>
