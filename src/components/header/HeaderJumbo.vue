@@ -11,6 +11,7 @@
         </div>
         <!-- //# container right kindle latest book and icons -->
         <div class="col-6 col-md-4 latest-book-container px-0">
+            <!-- //% 2 sqaures -->
             <div class="d-flex flex-column mb-4 text-white px-2">
                 <div class="square demos-square align-self-end">
                     <img src="" alt="img">
@@ -22,6 +23,7 @@
                     <p>On Sale</p>
                 </div>
             </div>
+            <!-- //% latest book container -->
             <div class="latest-book-card px-3">
                 <div class="d-flex justify-content-around">
                     <img class="img-fluid img-kindle-book" :src="require('@/assets/img/book-widget.png')" alt="book">
@@ -110,6 +112,7 @@ a{
     color: black;
 }
 
+/* //# smal squares  */
 .square{
     width:2.5rem;
     height: 2.5rem;
