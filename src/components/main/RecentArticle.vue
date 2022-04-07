@@ -22,11 +22,11 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="small-box d-flex flex-column justify-content-center">
+                <div class="pt-5 small-box d-flex flex-column justify-content-center">
                     <img :src="require('@/assets/img/thumb-13-2x-320x202.jpg')" alt="">
                     <p>October 24th, 2019 | 0 Comments</p>
                 </div>
-                <div class="small-box d-flex flex-column justify-content-center">
+                <div class="small-box d-flex flex-column justify-content-center pb-5">
                     <img :src="require('@/assets/img/thumb-08-2x-320x202.jpg')" alt="">
                     <p>October 24th, 2019 | 0 Comments</p>
                 </div>
@@ -63,7 +63,8 @@ button{
 
 .small-box{
     background-color:white;
-    padding: 2rem;
+    padding-left:2rem;
+    padding-right: 2rem;
     img{
         width:100%;
         margin-bottom: 2rem;
