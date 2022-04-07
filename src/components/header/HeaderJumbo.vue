@@ -88,7 +88,7 @@ export default {
     background-color: white;
     color:black;
     padding: 2rem 0rem;
-    height: 100%;
+    /* height: 100%; */
     .img-kindle-book{
         height: 100%;
         width: 50%;

@@ -1,18 +1,16 @@
 <template>
     <main>
-        <section class="container-fluid">
-            <div class="row px-5">
-                <div class="col-12">
-                    ciao
-                </div>
-            </div>
-        </section>
+        <MoreInfo/>
     </main>
 </template>
 
 <script>
+import MoreInfo from './MoreInfo.vue'
 export default {
     name:"MainWrap",
+    components:{
+        MoreInfo,
+    }
 }
 </script>
 
