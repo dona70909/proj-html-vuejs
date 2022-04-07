@@ -1,6 +1,6 @@
 <template>
     <section class="container-fluid bg-color">
-        <div class="row justify-content-between px-5">
+        <div class="row py-5 justify-content-between px-5">
             <div class="col-6">
                 <h2 class="text-capitalize">Recent articles</h2>
                 <h6 class="text-uppercase">Read the latest entries</h6>
@@ -53,8 +53,7 @@ button{
     border:none;
 }
 .wrapper-articles{
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
     .big-box{
         background-color:white;
         padding: 2rem;
