@@ -65,8 +65,14 @@ button{
     background-color:white;
     padding: 2rem;
     img{
-        width:100% ;
+        width:100%;
+        margin-bottom: 2rem;
     }
+
+}
+/* reset margin p(s) */
+p{
+    margin: 0;
 }
 
 
