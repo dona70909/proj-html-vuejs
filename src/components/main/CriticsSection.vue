@@ -50,7 +50,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .card-container{
     background-image: url('@/assets/img/event-04-400x240.jpg');
     background-repeat:no-repeat;
