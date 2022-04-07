@@ -6,6 +6,7 @@
         <UpcomingSection/>
         <SubscribeNews/>
         <AboutAuthor/>
+        <RecentArticles/>
     </main>
 </template>
 
@@ -16,6 +17,7 @@ import CriticsSection from './CriticsSection.vue'
 import UpcomingSection from './UpcomingSection.vue'
 import SubscribeNews from './SubscribeNews.vue'
 import AboutAuthor from './AboutAuthor.vue'
+import RecentArticles from './RecentArticle.vue'
 export default {
     name:"MainWrap",
     components:{
@@ -25,6 +27,7 @@ export default {
         UpcomingSection,
         SubscribeNews,
         AboutAuthor,
+        RecentArticles,
     }
 }
 </script>
