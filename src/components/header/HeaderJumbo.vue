@@ -10,10 +10,16 @@
             <address class="author">-<a rel="author" href="#/">The New York Times</a></address>
         </div>
         <!-- //# container right kindle latest book and icons -->
-        <div class="col-6 col-md-4  latest-book-container px-0">
+        <div class="col-6 col-md-4 latest-book-container px-0">
             <div class="d-flex flex-column mb-4 text-white px-2">
-                <div class="square demos-square align-self-end">icon</div>
-                <div class="square on-sale-square align-self-end">icon</div>
+                <div class="square demos-square align-self-end">
+                    <img src="" alt="img">
+                    <p>Demos</p>
+                </div>
+                <div class="square on-sale-square align-self-end">
+                    <img src="" alt="img">
+                    <p>On Sale</p>
+                </div>
             </div>
             <div class="latest-book-card px-3">
                 <div class="d-flex justify-content-around">
@@ -104,14 +110,25 @@ a{
 }
 
 .square{
-    width:2rem;
-    height: 2rem;
+    width:2.5rem;
+    height: 2.5rem;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:1.5rem;
+    flex-direction: column;
+    padding:1.7rem;
     background-color: white;
     margin-bottom:1rem;
+
+    p{
+        font-size: .6rem;
+        font-weight: 600;
+    }
+
+    img{
+        font-size: .6rem;
+        font-weight: 600;
+    }
 }
 </style>
