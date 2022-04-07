@@ -12,8 +12,8 @@
                     <h5>This book will change your perspective on life</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta non iure, nemo facere labore impedit. Porro, a? Error quis perspiciatis quod recusandae voluptas quae, provident magni iure ipsa consequatur magnam?</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta non iure, nemo facere labore impedit. Porro, a? Error quis perspiciatis quod recusandae voluptas quae, provident magni iure ipsa consequatur magnam?</p>
-                    <div class="link-article">
-                        <a href="#"><img :src="require('@/assets/img/nytimes-logo-white-xsmall.png')" alt=""></a>
+                    <div class="link-article w-75 text-white">
+                        <a class="text-decoration-none text-white" href="#"><img class="me-2" :src="require('@/assets/img/nytimes-logo-white-xsmall.png')" alt="nytimes">Justine Killpatrick, <em class="text-danger">The New York Times</em></a>
                     </div>
                 </div>
             </div>
@@ -23,10 +23,21 @@
                 </div>
                 
                 <div class="box">
-
+                    <h4>A true Masterpiece, Bravo!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores nostrum labore nemo sint dolorem tenetur quidem culpa, ducimus id, voluptas voluptatum praesentium adipisci tempora iure molestias veniam quasi. Quo!</p>
                 </div>
-                <div class="box">
 
+                <div class="link-article w-75 text-white mb-2">
+                    <a class="text-decoration-none text-dark" href="#/"><img class="me-5" :src="require('@/assets/img/theguardian-xsmall.png')" alt="nytimes">Gerald Handley,  <em class="text-danger">The Guardian</em></a>
+                </div>
+
+                <div class="box">
+                    <h4>A Unique View on the world!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores nostrum labore nemo sint dolorem tenetur quidem culpa, ducimus id, voluptas voluptatum praesentium adipisci tempora iure molestias veniam quasi. Quo!</p>
+                </div>
+
+                <div class="link-article w-75 text-white">
+                    <a class="text-decoration-none text-dark" href="#/"><img class="me-5" :src="require('@/assets/img/theguardian-xsmall.png')" alt="nytimes">Gerald Handley,  <em class="text-danger">The Guardian</em></a>
                 </div>
             </div>
         </div>
@@ -53,9 +64,10 @@ export default {
 }
 
 .box{
-    height: 300px;
+    width: 70%;
+    padding:.5rem 1rem;
     background-color: #fef7e9;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 </style>
