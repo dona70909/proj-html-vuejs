@@ -6,7 +6,7 @@
                     <h3>What Critics Say</h3>
                     <h4>Testimonial from around the world</h4>
                 </div>
-                <div class="card-container d-flex flex-column justify-content-center align-content-center">
+                <div class="card-container d-flex flex-column justify-content-center align-content-center text-white">
                     <h5>Best Author of his Generation</h5>
                     <hr>
                     <h5>This book will change your perspective on life</h5>
@@ -41,13 +41,11 @@ export default {
 
 <style lang="scss">
 .card-container{
-    /* background-image: url('@/assets/img/event-04-400x240.jpg'); */
+    background-image: url('@/assets/img/event-04-400x240.jpg');
     background-repeat:no-repeat;
-    background-size: 100%; 
-    padding: 5rem; 
+    background-size: cover; 
+    padding: 3rem; 
     border-bottom-right-radius: 20px;
-    /* height: 400px;
-    width: 100%; */
 
     .link-article{
         background-color: black;
