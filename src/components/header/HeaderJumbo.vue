@@ -12,8 +12,8 @@
         <!-- //# container right kindle latest book and icons -->
         <div class="col-6 col-md-4  latest-book-container px-0">
             <div class="d-flex flex-column mb-4 text-white px-2">
-                <div class="demos-square align-self-end">icon</div>
-                <div class="on-sale-square align-self-end">icon</div>
+                <div class="square demos-square align-self-end">icon</div>
+                <div class="square on-sale-square align-self-end">icon</div>
             </div>
             <div class="latest-book-card px-3">
                 <div class="d-flex justify-content-around">
@@ -80,7 +80,6 @@ export default {
     color:black;
     padding: 2rem 0rem;
     height: 100%;
-
     .img-kindle-book{
         height: 100%;
         width: 50%;
@@ -102,5 +101,17 @@ export default {
 a{
     text-decoration: none;
     color: black;
+}
+
+.square{
+    width:2rem;
+    height: 2rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem;
+    background-color: white;
+    margin-bottom:1rem;
 }
 </style>
