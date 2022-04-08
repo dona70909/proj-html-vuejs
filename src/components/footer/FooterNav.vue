@@ -1,6 +1,6 @@
 <template>
     <section class="container-fluid">
-        <div class="row pe-5 container-footer align-items-start">
+        <div class="row pe-5 container-footer justify-content-evenly align-items-start">
             <div class="col-2 ">
                 <img :src="require('@/assets/img/author-logo-round-small.png')" alt="">
             </div>
@@ -17,12 +17,13 @@
                 </ul>
             </div>
             <div class="col-3">
-                <h5>Contact info</h5>
+                <h5 class="mb-3">Contact info</h5>
                 <p class="text-white">63 E.Studebaker Street Bollingbrook, II 60440</p>
                 <p class="text-white">Phone: (800)000-000</p>
                 <p class="text-white">Mobile: (800)000-000</p>
                 <p class="text-white">Email: info@yourcompany.com</p>
             </div>
+            <div class="offset-1"></div> 
         </div>
     </section>
 </template>
