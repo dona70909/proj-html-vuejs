@@ -31,7 +31,7 @@
             <!-- //% 2 sqaures -->
             <div class="d-flex flex-column mb-4 text-white px-2">
                 <div class="square demos-square align-self-end">
-                    <img src="" alt="img">
+                    <i class="bi bi-book-fill"></i>
                     <p>Demos</p>
                 </div>
                 <div class="square on-sale-square align-self-end">
@@ -46,7 +46,7 @@
                     <img class="img-fluid img-kindle-book" :src="require('@/assets/img/book-widget.png')" alt="book">
                     <div class="kindle-text">
                         <h5>Latest Book Relese</h5>
-                        <h6>D.Vaughn Autobiography</h6>
+                        <h6 class="author-latest">D.Vaughn Autobiography</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dignissimos voluptatum eveniet soluta labore mollitia repudiandae recusandae itaque!</p>
                     </div>
                 </div>
@@ -128,6 +128,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import './src/assets/scss/partials/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 /* //#  ARTICLE LEFT NEW YORK TIMES */
 .article-card-container {
@@ -149,7 +150,7 @@ export default {
         p {
             font-size: 2.5rem;
             color:#ffffff;
-            font-family: 'PT Serif', serif;;
+            font-family: 'PT Serif', serif;
         }
 
         .author {
@@ -176,13 +177,14 @@ export default {
 /* //#  ARTICLE Right kindle */
 .latest-book-container {
     height: 100%;
+    font-family: 'EB Garamond', serif;
 
     .latest-book-card {
     background-color: white;
     color:black;
     padding: 2rem 0rem;
     //height: 80%; 
-
+    
         .img-kindle-book {
             height: 100%;
             width: 50%;
@@ -190,7 +192,15 @@ export default {
 
         .kindle-text {
             width: 50%;
-            p{
+            //font-family: 'EB Garamond', serif;
+            
+            p {
+                font-size: 1rem;
+            }
+
+            .author-latest {
+                color:$saffronOrangeGold;
+                text-transform: uppercase;
                 font-size: .8rem;
             }
         }
@@ -235,10 +245,10 @@ a {
 
 }
 
-/* //# smal squares  */
+/* //# small squares on sale and Demos  */
 .square {
-    width:2.5rem;
-    height: 2.5rem;
+    width:3rem;
+    height: 3rem;
     color: black;
     display: flex;
     justify-content: center;
@@ -249,7 +259,7 @@ a {
     margin-bottom:1rem;
 
     p {
-        font-size: .6rem;
+        font-size: .8rem;
         font-weight: 600;
         margin: 0;
     }
@@ -259,8 +269,8 @@ a {
         font-weight: 600;
     }
     .price-tag {
-        color: green;
-        font-size: 1rem;
+        color: $greenPrice;
+        font-size: 1.2rem;
     }
 }
 </style>
