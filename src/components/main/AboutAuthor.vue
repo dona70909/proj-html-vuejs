@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import './src/assets/scss/style.scss';
+
 .card-about-me{
     background-image: url('@/assets/img/box-1.jpg');
 }
