@@ -12,7 +12,7 @@
                 <h5>Usefil Links</h5>
                 <ul>
                     <li v-for="(link,index) in usefulLinks" :key="index + 'usefullinks'">
-                        <a :href="link.url">{{link.text}}</a>
+                        <a :href="link.url"> <i class="bi bi-chevron-right me-2"></i> {{link.text}}</a>
                     </li>
                 </ul>
             </div>
