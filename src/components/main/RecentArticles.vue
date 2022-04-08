@@ -12,12 +12,11 @@
         <div class="row  wrapper-articles  justify-content-center">
             <div class="col-6">
                 <div class="big-box">
-                    <img :src="require('@/assets/img/20-Tips-400x235.jpg')" alt="">
+                    <img :src="mainArticle.img" :alt="mainArticle.title">
                     <div class="text-big-box">
-                        <h5>C20 Creativity Tips</h5>
-                        <h6 class="mb-4">By admin| October 24th 2019| Categories: Event,Tips and Tricks</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia non sit error! Praesentium, magnam. Velit quod esse, similique laboriosam.</p>
+                        <h5>{{mainArticle.title}}</h5>
+                        <h6 class="mb-4">{{mainArticle.subtitle}}</h6>
+                        <p>{{mainArticle.paragraph}}</p>
                     </div>
                 </div>
             </div>
@@ -49,7 +48,14 @@ export default {
                     img:require('@/assets/img/thumb-08-2x-320x202.jpg'),
                     paragraph:"October 24th, 2019 | 0 Comments"
                 }
-            ]
+            ],
+
+            mainArticle:{
+                title:"C20 Creativity Tips",
+                subtitle:"By admin| October 24th 2019| Categories: Event,Tips and Tricks",
+                img:require('@/assets/img/20-Tips-400x235.jpg'),
+                paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia non sit error! Praesentium, magnam. Velit quod esse, similique laboriosam."
+            }
         }
     }
 }
