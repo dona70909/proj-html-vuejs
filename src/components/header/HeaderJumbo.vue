@@ -4,7 +4,7 @@
         <!-- //# container left article -->
         <div class="col-6 col-md-8 article-card">
             <h3>Damon Vaugh</h3>
-            <div  class="article" v-show="article.active == true" v-for="(article,index) in mainArticles" :key="index +'aricles main'">
+            <div  class="article" v-for="(article) in mainArticles" :key="article.id">
                 <div class="main-article">
                     <p>
                         {{article.paragraph}}
@@ -18,7 +18,7 @@
                 <div @click="leftArticle()" class="scroll-btn arrow-left m-2 d-flex align-items-center justify-content-center">
                     <i class="bi bi-arrow-left-short fs-2 text-white"></i>
                 </div>
-                <div class="scroll-btn arrow-right m-2 d-flex align-items-center justify-content-center">
+                <div @click="rightArticle()" class="scroll-btn arrow-right m-2 d-flex align-items-center justify-content-center">
                     <i class="bi bi-arrow-right-short fs-2 text-white "></i>
                 </div>
                 
@@ -72,18 +72,21 @@ export default {
                     source:"The New York Times",
                     sourceLink:"#/",
                     active:true,
+                    id:0,
                 },
                 {
                     paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
                     source:"The Globe and Mail",
                     sourceLink:"#/",
                     active:false,
+                    id:1,
                 },
                 {
                     paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
                     source:"The Independent",
                     sourceLink:"#/",
                     active:false,
+                    id:2,
                 }
             ],
 
@@ -95,22 +98,30 @@ export default {
         leftArticle(){
             /* this.mainArticles[0].active = false;
             this.mainArticles[2].active = true; */
-            let activeIndex = 0;
+            /*     let activeIndex = 0;
+            this.mainArticles[activeIndex].active === false;
             
-            console.log(this.mainArticles[activeIndex].source)
+            console.log(this.mainArticles[activeIndex].source);
             if(activeIndex === 0){
                 activeIndex = this.mainArticles.length - 1;
             } else {
                 activeIndex--;
             }
 
-            this.mainArticles[activeIndex].active === false;
-            
             this.mainArticles[activeIndex - 1].active === true;
+            console.log(this.mainArticles[activeIndex - 1].source) */
 
-            
-            console.log(this.mainArticles[activeIndex - 1].source)
+            const first = this.mainArticles.shift();
+            this.mainArticles = this.mainArticles.concat(first);
+        },
+
+
+        rightArticle(){
+            const last = this.mainArticles.pop();
+            this.mainArticles = [last].concat(this.mainArticles);
         }
+
+
     }
 }
 </script>
@@ -161,7 +172,7 @@ export default {
     }
 }
 
-/* //#  ARTICLE RughT kindle */
+/* //#  ARTICLE Right kindle */
 .latest-book-container{
     height: 100%;
 
