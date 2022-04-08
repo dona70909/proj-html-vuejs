@@ -3,8 +3,8 @@
         <div class="row container-cards justify-content-center">
             <div class="col-12">
                 <div class="title text-center mb-4">
-                    <h2>Upcoming Events</h2>
-                    <h3>Meet the authors in person</h3>
+                    <h2 class="title">Upcoming Events</h2>
+                    <h3 class="subtitle">Meet the authors in person</h3>
                 </div>
             </div>
             <div class="col-4 px-4" v-for="(article,index) in upcomings" :key="index + 'upcoming' ">
@@ -50,11 +50,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.bg-color{
+@import './src/assets/scss/style.scss';
+
+.bg-color {
     background-color:#fef7e9;
 }
-.container-cards{
+
+.title {
+    font-family: 'PT Serif', serif;
+}
+
+.subtitle {
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    color:$saffronOrangeGold;
+    font-size:1rem;
+}
+.container-cards {
     padding: 3rem 7rem;
+
+    .card {
+        font-family: 'PT Serif', serif;
+
+        h5 {
+            font-weight: 400;
+        }
+
+        p {
+            color:$osloGray;
+        }
+    }
 }
 </style>>
 

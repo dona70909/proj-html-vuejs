@@ -1,15 +1,15 @@
 <template>
     <section class="container-fluid bg-color">
-        <div class="row py-5 justify-content-between px-5">
-            <div class="col-6">
+        <div class="row px-5 py-5 justify-content-between px-5">
+            <div class="col-6 px-5">
                 <h2 class="text-capitalize">Recent articles</h2>
                 <h6 class="text-uppercase">Read the latest entries</h6>
             </div>
-            <div class="col-6 d-flex justify-content-end align-items-center">
+            <div class="col-6 px-5 d-flex justify-content-end align-items-center">
                 <button class="px-3">All Articles</button>
             </div>
         </div>
-        <div class="row  wrapper-articles  justify-content-center">
+        <div class="row px-5 wrapper-articles  justify-content-center">
             <div class="col-6">
                 <div class="big-box">
                     <img :src="mainArticle.img" :alt="mainArticle.title">
@@ -72,24 +72,27 @@ button{
     color: white;
     border:none;
 }
-.wrapper-articles{
+.wrapper-articles {
     padding-bottom: 6rem;
-    .big-box{
+
+    .big-box {
         background-color:white;
         padding: 2rem;
         height: 100%;
-        img{
+
+        img {
             width:100%;
             margin-bottom: 2rem;
         }
     }
 
-    .small-box{
+    .small-box {
         background-color:white;
         padding-left:2rem;
         padding-right: 2rem;
         height: 50%;
-        img{
+        
+        img {
             width:100%;
             margin-bottom: 2rem;
         }

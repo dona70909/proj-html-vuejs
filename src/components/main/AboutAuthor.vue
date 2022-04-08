@@ -1,33 +1,21 @@
 <template>
     <section class="container-fluid">
-        <div class="row px-5 py-3 justify-content-center align-items-center">
+        <div class="row px-5 py-5 justify-content-center align-items-center container-section">
             <div class="col-12">
                 <div class="title text-center mb-5">
-                    <h2 class="text-capitalize">Dig a little deeper into damon vaugh</h2>
-                    <h6 class="text-uppercase">Find out more about the author</h6>
+                    <h2 class="title-section">Dig a little deeper into damon vaugh</h2>
+                    <h6 class="subtitle-section">Find out more about the author</h6>
                 </div>
             </div>
+        </div>
 
-
-            <div class="col-4 px-5 card-item card-about-me d-flex justify-content-center">
-                <div class="text-card text-center pb-4">
-                    <h2 class="text-capitalize text-white pb-2">About me</h2>
+        <div class="row px-5 pb-5 pt-2 justify-content-center container-section">
+            <div v-for="(card) in cards" :key="card.title" class="col-4 card-item d-flex justify-content-center position-relative">
+                <img :src="card.image" :alt="card.title">
+                <div class="text-card bottom-0 align-self-end text-center pb-4 position-absolute">
+                    <h2 class="title-card pb-2">{{card.title}}</h2>
                     <hr class="w-50">
-                    <p class="text-warning">Lorem ipsum dolor, sit amet consectetur!</p>
-                </div>
-            </div>
-            <div class="col-4 card-item card-latest d-flex justify-content-center">
-                <div class="text-card text-center pb-4">
-                    <h2 class="text-capitalize text-white pb-2">My latest book</h2>
-                    <hr class="w-50">
-                    <p class="text-warning">Lorem ipsum dolor, sit amet consectetur!</p>
-                </div>
-            </div>
-            <div class="col-4 card-item card-signing d-flex justify-content-center">
-                <div class="text-card text-center pb-4">
-                    <h2 class="text-capitalize text-white pb-2">Book signing</h2>
-                    <hr class="w-50">
-                    <p class="text-warning">Lorem ipsum dolor, sit amet consectetur!</p>
+                    <p>{{card.subtitle}}</p>
                 </div>
             </div>
         </div>
@@ -36,40 +24,85 @@
 
 <script>
 export default {
-    name:"AboutAuthor"
+    name:"AboutAuthor",
+    data() {
+        return {
+            cards: [
+                {
+                    title:"About me",
+                    subtitle:"Lorem ipsum dolor, sit amet consectetur!",
+                    image:require('@/assets/img/box-1.jpg'),
+                    url:"#/"
+                },
+                {
+                    
+                    title:"My latest book",
+                    subtitle:"Lorem ipsum dolor, sit amet consectetur!",
+                    image:require('@/assets/img/box-4.jpg'),
+                    url:"#/"
+                },
+                {
+                    
+                    title:"Book signing",
+                    subtitle:"Lorem ipsum dolor, sit amet consectetur!",
+                    image:require('@/assets/img/box-3.jpg'),
+                    url:"#/"
+                }
+            ]
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 
 @import './src/assets/scss/style.scss';
+.container-section {
+    font-family: 'PT Serif', serif;
+    .title-section {
+        text-transform: capitalize;
+    }
 
-.card-about-me{
-    background-image: url('@/assets/img/box-1.jpg');
-}
-.card-latest{
-    background-image: url('@/assets/img/box-3.jpg');
-}
-.card-signing{
-    background-image: url('@/assets/img/box-4.jpg');
-}
-.card-item{
-    height: 500px;
-    width:calc(100% /3 - 2rem);
-    border-bottom-right-radius: 50px;
-    background-repeat:no-repeat;
-    background-size: cover; 
-    margin: 0 1rem;
-    /* filter: brightness(50%); */
-    /* filter: grayscale(1%); */
-    .text-card{
-        align-self: flex-end;
+    .subtitle-section {
+        text-transform: uppercase;
+        color:$saffronOrangeGold;
+    }
 
-        hr{
-            margin: 0 auto;
-            height:.3rem;
-            color: rgb(208, 21, 21);
+
+    .card-item {
+        height: 500px;
+        width:calc(100% / 3 - 4rem);
+        margin: 0 2rem;
+
+        img {
+            border-bottom-right-radius: 50px;
+            width:100%;
+            filter:brightness(50%);
+            filter:drop-shadow(50%)
+        }
+        .text-card {
+            /* align-self: flex-end; */
+            bottom: 0; 
+            hr {
+                margin: 0 auto;
+                height:.3rem;
+                color:$osloGray;
+            }
+
+            .title-card {
+                text-transform: uppercase;
+                color:white;
+            }
+
+            p {
+                color: $saffronOrangeGold;
+            }
+
         }
     }
+
 }
+
+
+
 </style>
