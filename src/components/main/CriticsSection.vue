@@ -57,9 +57,9 @@ export default {
                 {
                     title:'A Unique View on the world!',
                     paragraph:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores nostrum labore nemo sint dolorem tenetur quidem culpa, ducimus id, voluptas voluptatum praesentium adipisci tempora iure molestias veniam quasi. Quo!',
-                    logo:require('@/assets/img/theguardian-xsmall.png'),
+                    logo:require('@/assets/img/globe-xsmall.png'),
                     author:'Gerald Handley',
-                    logoName:'The Guardian',
+                    logoName:'The Globe and Mail',
                     link:'#/'
                 }
             ],
