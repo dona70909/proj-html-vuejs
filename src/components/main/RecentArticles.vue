@@ -22,9 +22,9 @@
             </div>
             <div class="col-3">
                 <div v-for="(article,index) in recentArticles" :key="index + 'recent' " class="pt-5 small-box d-flex flex-column justify-content-center">
-                    <h4>{{article.title}}</h4>
+                    <h4 class="pb-2">{{article.title}}</h4>
                     <img :src="article.img" alt="">
-                    <p>{{article.paragraph}}</p>
+                    <p class="pb-5 m-0">{{article.paragraph}}</p>
                 </div>
             </div>
         </div>
