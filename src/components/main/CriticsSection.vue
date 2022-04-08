@@ -22,22 +22,15 @@
                     <button >Read All Testimonials</button>
                 </div>
                 
-                <div class="box">
-                    <h4>A true Masterpiece, Bravo!</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores nostrum labore nemo sint dolorem tenetur quidem culpa, ducimus id, voluptas voluptatum praesentium adipisci tempora iure molestias veniam quasi. Quo!</p>
-                </div>
+                <div class="box-article-container" v-for="(article,index) in  articles" :key=" index + 'article' ">
+                    <div class="box">
+                        <h4>{{article.title}}</h4>
+                        <p>{{article.paragraph}}</p>
+                    </div>
 
-                <div class="link-article w-75 text-white mb-2">
-                    <a class="text-decoration-none text-dark" href="#/"><img class="me-5" :src="require('@/assets/img/theguardian-xsmall.png')" alt="nytimes">Gerald Handley,  <em class="text-danger">The Guardian</em></a>
-                </div>
-
-                <div class="box">
-                    <h4>A Unique View on the world!</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores nostrum labore nemo sint dolorem tenetur quidem culpa, ducimus id, voluptas voluptatum praesentium adipisci tempora iure molestias veniam quasi. Quo!</p>
-                </div>
-
-                <div class="link-article w-75 text-white">
-                    <a class="text-decoration-none text-dark" href="#/"><img class="me-5" :src="require('@/assets/img/theguardian-xsmall.png')" alt="nytimes">Gerald Handley,  <em class="text-danger">The Guardian</em></a>
+                    <div class="link-article w-75 text-white mb-2">
+                        <a class="text-decoration-none text-dark" href="#/"><img class="me-5" :src="article.logo" alt="nytimes">{{article.author}}<em class="text-danger">{{article.logoName}}</em></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,6 +40,27 @@
 <script>
 export default {
     name:"CriticsSection",
+
+    data(){
+        return{
+            articles:[
+                {
+                    title:'A true Masterpiece, Bravo!',
+                    paragraph:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores nostrum labore nemo sint dolorem tenetur quidem culpa, ducimus id, voluptas voluptatum praesentium adipisci tempora iure molestias veniam quasi. Quo!',
+                    logo:require('@/assets/img/theguardian-xsmall.png'),
+                    author:'Gerald Handley',
+                    logoName:'The Guardian'
+                },
+                {
+                    title:'A Unique View on the world!',
+                    paragraph:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores nostrum labore nemo sint dolorem tenetur quidem culpa, ducimus id, voluptas voluptatum praesentium adipisci tempora iure molestias veniam quasi. Quo!',
+                    logo:require('@/assets/img/theguardian-xsmall.png'),
+                    author:'Gerald Handley',
+                    logoName:'The Guardian',
+                }
+            ]
+        }
+    }
 }
 </script>
 
