@@ -4,21 +4,27 @@
         <!-- //# container left article -->
         <div class="col-6 col-md-8 article-card">
             <h3>Damon Vaugh</h3>
-            <div class="main-article">
-                <p>
-                    Best-selling Author and the most influential public intellectualin the western world right now.
-                </p>
-                <address class="author">-<a rel="author" href="#/">The New York Times</a></address>
+            <div  class="article" v-show="article.active == true" v-for="(article,index) in mainArticles" :key="index +'aricles main'">
+                <div class="main-article">
+                    <p>
+                        {{article.paragraph}}
+                    </p>
+                    <address class="author">-<a rel="author" :href="article.sourceLink">{{article.source}}</a></address>
+                </div>
             </div>
 
+            <!-- buttons -->
             <div class="scroll-btn-container d-flex">
-                <div class="scroll-btn arrow-left m-2 d-flex align-items-center justify-content-center">
+                <div @click="leftArticle()" class="scroll-btn arrow-left m-2 d-flex align-items-center justify-content-center">
                     <i class="bi bi-arrow-left-short fs-2 text-white"></i>
                 </div>
                 <div class="scroll-btn arrow-right m-2 d-flex align-items-center justify-content-center">
                     <i class="bi bi-arrow-right-short fs-2 text-white "></i>
                 </div>
+                
             </div>
+
+            
         </div>
         <!-- //# container right kindle latest book and icons -->
         <div class="col-6 col-md-4 latest-book-container px-0">
@@ -65,18 +71,41 @@ export default {
                     paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
                     source:"The New York Times",
                     sourceLink:"#/",
+                    active:true,
                 },
                 {
                     paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
                     source:"The Globe and Mail",
                     sourceLink:"#/",
+                    active:false,
                 },
                 {
                     paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
                     source:"The Independent",
                     sourceLink:"#/",
+                    active:false,
                 }
-            ]
+            ],
+
+            
+        }
+    },
+
+    methods:{
+        leftArticle(){
+            /* this.mainArticles[0].active = false;
+            this.mainArticles[2].active = true; */
+            let activeIndex = 0;
+            this.mainArticles[activeIndex].active === false;
+            console.log(this.mainArticles[activeIndex].source)
+            if(activeIndex === 0){
+                activeIndex = this.mainArticles.length - 1;
+            } else {
+                activeIndex--;
+            }
+
+            this.mainArticles[activeIndex - 1].active === true;
+            console.log(this.mainArticles[activeIndex - 1].source)
         }
     }
 }
@@ -118,6 +147,7 @@ export default {
             width: 2.5rem;
             height: 2.5rem;
             background-color: red;
+            cursor: pointer;
 
             i{
                 cursor: pointer;
