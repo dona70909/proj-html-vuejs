@@ -2,8 +2,8 @@
     <section class="container-fluid">
         <div class="row px-5 justify-content-center text-center align-content-center info-container">
             <div class="col-12 d-flex flex-column align-content-center">
-                <h2>More About Damon Vaughn</h2>
-                <p class="text-center">Damon Vaughn is a professore of psychology at the University of Toronto, a clinical psychologist and the author of the multi-milion copy bestseller "The story of my life</p>
+                <h2 class="title">More About Damon Vaughn</h2>
+                <p class="text-center text-article">Damon Vaughn is a professore of psychology at the University of Toronto, a clinical psychologist and the author of the multi-milion copy bestseller "The story of my life</p>
                 <div class="d-flex justify-content-center">
                     <button class="px-3">Meet The Author</button>
                 </div>
@@ -28,14 +28,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.info-container{
+@import './src/assets/scss/style.scss';
+
+.info-container {
     height: 300px;
+
+    .title{
+        color:$saffronOrangeGold;
+        font-family: 'Caveat', cursive;
+        font-size: 4rem;
+    }
+
+    .text-article{
+        font-family: 'PT Serif', serif;
+    }
 }
-.logo-container{
+
+.logo-container {
     background-color:#fef7e9;
-    .logo-wrap-col{
+
+    .logo-wrap-col {
         /* padding: 0 8rem; */
-        img{
+        img {
             width:calc(100% / 4);
         }
     }
