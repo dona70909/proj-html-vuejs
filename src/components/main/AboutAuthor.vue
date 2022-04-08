@@ -1,6 +1,6 @@
 <template>
     <section class="container-fluid">
-        <div class="row px-5 py-5 justify-content-center align-items-center container-section">
+        <div class="row px-5 pb-2 pt-3 justify-content-center align-items-center container-section">
             <div class="col-12">
                 <div class="title text-center mb-5">
                     <h2 class="title-section">Dig a little deeper into damon vaugh</h2>
@@ -70,7 +70,7 @@ export default {
 
 
     .card-item {
-        height: 500px;
+        height: 450px;
         width:calc(100% / 3 - 4rem);
         margin: 0 2rem;
 
@@ -78,7 +78,8 @@ export default {
             border-bottom-right-radius: 50px;
             width:100%;
             filter:brightness(50%);
-            filter:drop-shadow(50%)
+            filter:drop-shadow(50%);
+            
         }
         .text-card {
             /* align-self: flex-end; */
@@ -87,15 +88,19 @@ export default {
                 margin: 0 auto;
                 height:.3rem;
                 color:$osloGray;
+                padding: 0 3rem;
             }
 
             .title-card {
                 text-transform: uppercase;
                 color:white;
+                font-size: 1.3rem;
+                font-weight: 600;
             }
 
             p {
                 color: $saffronOrangeGold;
+                padding: 0 2rem;
             }
 
         }
