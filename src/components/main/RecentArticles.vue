@@ -22,13 +22,10 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="pt-5 small-box d-flex flex-column justify-content-center">
-                    <img :src="require('@/assets/img/thumb-13-2x-320x202.jpg')" alt="">
-                    <p>October 24th, 2019 | 0 Comments</p>
-                </div>
-                <div class="small-box d-flex flex-column justify-content-center pb-5">
-                    <img :src="require('@/assets/img/thumb-08-2x-320x202.jpg')" alt="">
-                    <p>October 24th, 2019 | 0 Comments</p>
+                <div v-for="(article,index) in recentArticles" :key="index + 'recent' " class="pt-5 small-box d-flex flex-column justify-content-center">
+                    <h4>{{article.title}}</h4>
+                    <img :src="article.img" alt="">
+                    <p>{{article.paragraph}}</p>
                 </div>
             </div>
         </div>
@@ -37,7 +34,24 @@
 
 <script>
 export default {
-    name:"RecentArticles"
+    name:"RecentArticles",
+
+    data(){
+        return{
+            recentArticles:[
+                {
+                    title:"What's on your booklist",
+                    img:require('@/assets/img/thumb-13-2x-320x202.jpg'),
+                    paragraph:"October 24th, 2019 | 0 Comments"
+                },
+                {
+                    title:"Istanbul travel guide",
+                    img:require('@/assets/img/thumb-08-2x-320x202.jpg'),
+                    paragraph:"October 24th, 2019 | 0 Comments"
+                }
+            ]
+        }
+    }
 }
 </script>
 
