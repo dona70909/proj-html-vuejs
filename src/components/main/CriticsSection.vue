@@ -7,13 +7,13 @@
                     <h4>Testimonial from around the world</h4>
                 </div>
                 <div class="card-container d-flex flex-column justify-content-center align-content-center text-white">
-                    <h5>Best Author of his Generation</h5>
+                    <h5>{{mainArticle.title}}</h5>
                     <hr>
-                    <h5>This book will change your perspective on life</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta non iure, nemo facere labore impedit. Porro, a? Error quis perspiciatis quod recusandae voluptas quae, provident magni iure ipsa consequatur magnam?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta non iure, nemo facere labore impedit. Porro, a? Error quis perspiciatis quod recusandae voluptas quae, provident magni iure ipsa consequatur magnam?</p>
+                    <h5>{{mainArticle.subtitle}}</h5>
+                    <p>{{mainArticle.paragraph}}</p>
+                    <p>{{mainArticle.paragrphTwo}}</p>
                     <div class="link-article w-75 text-white">
-                        <a class="text-decoration-none text-white" href="#"><img class="me-2" :src="require('@/assets/img/nytimes-logo-white-xsmall.png')" alt="nytimes">Justine Killpatrick, <em class="text-danger">The New York Times</em></a>
+                        <a class="text-decoration-none text-white" :href="mainArticle.link"><img class="me-3" :src="mainArticle.logo" alt="nytimes">{{mainArticle.author}}<em class="text-danger m-2">{{mainArticle.logoName}}</em></a>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,18 @@ export default {
                     logoName:'The Guardian',
                     link:'#/'
                 }
-            ]
+            ],
+
+            mainArticle:{
+                title:"Best Author of his Generation",
+                subtitle:"This book will change your perspective on life",
+                paragraph:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et explicabo tenetur reprehenderit maiores aspernatur mollitia esse commodi asperiores rem laboriosam non illo cumque ea, nisi earum doloremque sunt dolores. Voluptatum.",
+                paragrphTwo:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et explicabo tenetur reprehenderit maiores aspernatur mollitia esse commodi asperiores rem laboriosam non illo cumque ea, nisi earum doloremque sunt dolores. Voluptatum.",
+                logo:require('@/assets/img/nytimes-logo-white-xsmall.png'),
+                author:"Justine Killpatrick",
+                logoName:"The New York Times",
+                link:"#/"
+            }
         }
     }
 }
