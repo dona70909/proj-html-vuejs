@@ -29,7 +29,9 @@
                     </div>
 
                     <div class="link-article w-75 text-white mb-2">
-                        <a class="text-decoration-none text-dark" href="#/"><img class="me-5" :src="article.logo" alt="nytimes">{{article.author}}<em class="text-danger">{{article.logoName}}</em></a>
+                        <a class="text-decoration-none text-dark" :href="article.link">
+                            <img class="me-5" :src="article.logo" alt="nytimes">{{article.author}}<em class="text-danger">{{article.logoName}}</em>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -49,7 +51,8 @@ export default {
                     paragraph:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores nostrum labore nemo sint dolorem tenetur quidem culpa, ducimus id, voluptas voluptatum praesentium adipisci tempora iure molestias veniam quasi. Quo!',
                     logo:require('@/assets/img/theguardian-xsmall.png'),
                     author:'Gerald Handley',
-                    logoName:'The Guardian'
+                    logoName:'The Guardian',
+                    link:'#/'
                 },
                 {
                     title:'A Unique View on the world!',
@@ -57,6 +60,7 @@ export default {
                     logo:require('@/assets/img/theguardian-xsmall.png'),
                     author:'Gerald Handley',
                     logoName:'The Guardian',
+                    link:'#/'
                 }
             ]
         }
