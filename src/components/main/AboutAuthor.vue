@@ -11,7 +11,7 @@
 
             <div class="col-4 px-5 card-item card-about-me d-flex justify-content-center">
                 <div class="text-card text-center pb-4">
-                    <h2 class="text-capitalize pb-2">About me</h2>
+                    <h2 class="text-capitalize text-white pb-2">About me</h2>
                     <hr class="w-50">
                     <p class="text-warning">Lorem ipsum dolor, sit amet consectetur!</p>
                 </div>
