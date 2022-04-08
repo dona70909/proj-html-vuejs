@@ -19,6 +19,7 @@
             <div class="col-8">
                 <div class="card-container d-flex flex-column justify-content-center align-content-center text-white">
                     <h5>{{mainArticle.title}}</h5>
+                    <hr>
                     <h6>{{mainArticle.subtitle}}</h6>
                     <p>{{mainArticle.paragraph}}</p>
                     <p>{{mainArticle.paragrphTwo}}</p>
@@ -126,7 +127,11 @@ export default {
     h5 {
         font-family: 'PT Serif', serif;
         font-size: 2rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    hr {
+        margin-bottom: 2rem;
     }
 
     h6 {
