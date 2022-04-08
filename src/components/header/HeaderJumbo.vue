@@ -199,18 +199,24 @@ export default {
     button {
         /* border: none; */
         padding: .6rem 1.9rem;
-        background-color:$skyBlue;
+        background-color:white;
         border:1px solid $lightBlue;
         
+        &:hover{
+            background: $skyBlue;
+        }
+
+        a:hover{
+            color:black
+        }
     }
 
     .btn-amazon {
-        background-color:$skyBlue;
         border-right: none;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
-    
+
     .btn-apple {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
