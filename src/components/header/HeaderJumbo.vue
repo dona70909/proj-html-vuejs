@@ -4,10 +4,21 @@
         <!-- //# container left article -->
         <div class="col-6 col-md-8 article-card">
             <h3>Damon Vaugh</h3>
-            <p>
-                Best-selling Author and the most influential public intellectualin the western world right now.
-            </p>
-            <address class="author">-<a rel="author" href="#/">The New York Times</a></address>
+            <div class="main-article">
+                <p>
+                    Best-selling Author and the most influential public intellectualin the western world right now.
+                </p>
+                <address class="author">-<a rel="author" href="#/">The New York Times</a></address>
+            </div>
+
+            <div class="scroll-btn-container d-flex">
+                <div class="scroll-btn arrow-left m-2 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-arrow-left-short fs-2 text-white"></i>
+                </div>
+                <div class="scroll-btn arrow-right m-2 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-arrow-right-short fs-2 text-white "></i>
+                </div>
+            </div>
         </div>
         <!-- //# container right kindle latest book and icons -->
         <div class="col-6 col-md-4 latest-book-container px-0">
@@ -45,7 +56,29 @@
 
 <script>
 export default {
-    name:"HeaderJumbo"
+    name:"HeaderJumbo",
+
+    data(){
+        return{
+            mainArticles:[
+                {
+                    paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
+                    source:"The New York Times",
+                    sourceLink:"#/",
+                },
+                {
+                    paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
+                    source:"The Globe and Mail",
+                    sourceLink:"#/",
+                },
+                {
+                    paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
+                    source:"The Independent",
+                    sourceLink:"#/",
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -78,6 +111,16 @@ export default {
             font-family: 'italic';
             a{
                 color:white;
+            }
+        }
+
+        .scroll-btn{
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: red;
+
+            i{
+                cursor: pointer;
             }
         }
 
