@@ -54,8 +54,9 @@ export default {
 /* //#  ARTICLE LEFT NEW YORK TIMES */
 .article-card-container{
     padding-left:5rem;
-   /*  height: 100%; */
+    height: 100%; 
     .article-card{
+        height: 100%;
         h3{
             color:darkgoldenrod;
             font-size: 3.8rem;
@@ -84,23 +85,29 @@ export default {
 }
 
 /* //#  ARTICLE RughT kindle */
-.latest-book-card{
+.latest-book-container{
+    height: 100%;
+
+
+    .latest-book-card{
     background-color: white;
     color:black;
     padding: 2rem 0rem;
-    /* height: 100%; */
-    .img-kindle-book{
-        height: 100%;
-        width: 50%;
-    }
+    //height: 80%; 
+        .img-kindle-book{
+            height: 100%;
+            width: 50%;
+        }
 
-    .kindle-text{
-        width: 50%;
-        p{
-            font-size: .8rem;
+        .kindle-text{
+            width: 50%;
+            p{
+                font-size: .8rem;
+            }
         }
     }
 }
+
 
 .btn-logo{
     height: 1rem;
