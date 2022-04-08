@@ -7,33 +7,13 @@
                     <h3>Meet the authors in person</h3>
                 </div>
             </div>
-            <div class="col-4 px-4">
+            <div class="col-4 px-4" v-for="(article,index) in upcomings" :key="index + 'upcoming' ">
                 <div class="card">
-                    <img class="card-img-top" :src="require('@/assets/img/event-05-400x240.jpg')" alt="Card image cap">
+                    <img class="card-img-top" :src="article.image" alt="Card image cap">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">{{article.title}}</h5>
                         <hr>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 px-4">
-                <div class="card">
-                    <img class="card-img-top" :src="require('@/assets/img/event-04-400x240.jpg')" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <hr>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 px-4">
-                <div class="card">
-                    <img class="card-img-top img-fluid" :src="require('@/assets/img/event-07-400x240.jpg')" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <hr>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">{{article.paragraph}}</p>
                     </div>
                 </div>
             </div>
@@ -44,6 +24,28 @@
 <script>
 export default {
     name:"UpcomingSection",
+
+    data(){
+        return{
+            upcomings:[
+                {
+                    title:"Card title",
+                    paragraph:"Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    image:require('@/assets/img/event-05-400x240.jpg'),
+                },
+                {
+                    title:"Card title",
+                    paragraph:"Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    image:require('@/assets/img/event-04-400x240.jpg'), 
+                },
+                {
+                    title:"Card title",
+                    paragraph:"Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    image:require('@/assets/img/event-07-400x240.jpg'),
+                }
+            ]
+        }
+    }
 }
 </script>
 
