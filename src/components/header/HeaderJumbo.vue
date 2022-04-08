@@ -120,42 +120,39 @@ export default {
 @import './src/assets/scss/partials/_variables.scss';
 
 /* //#  ARTICLE LEFT NEW YORK TIMES */
-.article-card-container{
+.article-card-container {
     padding-left:5rem;
     height: 100%; 
-    .article-card{
+    .article-card {
         height: 100%;
-        h3{
+        h3 {
             color:$saffronOrangeGold;
             font-size: 5rem;
             font-family: 'Caveat', cursive;
         }
         
-        a{
-            color:white;
+        a {
+            color:#ffffff;
             text-decoration: none;
         }
 
-        p{
+        p {
             font-size: 2.5rem;
-            color:white;
+            color:#ffffff;
         }
 
-        .author{
-            color:white;
+        .author {
+            color:$osloGray;
             font-family: 'italic';
-            a{
-                color:white;
-            }
         }
 
-        .scroll-btn{
+        .scroll-btn {
             width: 2.5rem;
             height: 2.5rem;
-            background-color: black;
+            background-color:$black;
             cursor: pointer;
 
-            i{
+            i {
                 cursor: pointer;
             }
         }
@@ -164,21 +161,19 @@ export default {
 }
 
 /* //#  ARTICLE Right kindle */
-.latest-book-container{
+.latest-book-container {
     height: 100%;
-
-
-    .latest-book-card{
+    .latest-book-card {
     background-color: white;
     color:black;
     padding: 2rem 0rem;
     //height: 80%; 
-        .img-kindle-book{
+        .img-kindle-book {
             height: 100%;
             width: 50%;
         }
 
-        .kindle-text{
+        .kindle-text {
             width: 50%;
             p{
                 font-size: .8rem;
@@ -188,18 +183,18 @@ export default {
 }
 
 
-.btn-logo{
+.btn-logo {
     height: 1rem;
     margin-right: .2rem;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
 /* //# smal squares  */
-.square{
+.square {
     width:2.5rem;
     height: 2.5rem;
     color: black;
@@ -211,17 +206,17 @@ a{
     background-color: white;
     margin-bottom:1rem;
 
-    p{
+    p {
         font-size: .6rem;
         font-weight: 600;
         margin: 0;
     }
 
-    img{
+    img {
         font-size: .6rem;
         font-weight: 600;
     }
-    .price-tag{
+    .price-tag {
         color: green;
         font-size: 1rem;
     }
