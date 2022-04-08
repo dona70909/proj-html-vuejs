@@ -52,8 +52,18 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     
-                    <button class="px-3"> <a href="#/"><img class="btn-logo" :src="require('@/assets/img/amazon-logo-small.png')" alt="amazon-logo">Buy on amazon</a>  </button>
-                    <button class="px-3"><a href="#/"> <img class="btn-logo" :src="require('@/assets/img/apple-logo.png')" alt=""> Buy on app store</a></button>
+                    <button class="btn-amazon"> 
+                    <a href="#/">
+                        <img class="btn-logo" :src="require('@/assets/img/amazon-logo-small.png')" alt="amazon-logo">
+                        Buy on amazon
+                    </a> 
+                    </button>
+                    <button class="btn-apple">
+                        <a href="#/">
+                        <img class="btn-logo" :src="require('@/assets/img/apple-logo.png')" alt=""> 
+                        Buy on app store
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -108,7 +118,6 @@ export default {
                 this.counter++;
             }
         }
-
 
     }
 }
@@ -167,11 +176,13 @@ export default {
 /* //#  ARTICLE Right kindle */
 .latest-book-container {
     height: 100%;
+
     .latest-book-card {
     background-color: white;
     color:black;
     padding: 2rem 0rem;
     //height: 80%; 
+
         .img-kindle-book {
             height: 100%;
             width: 50%;
@@ -184,6 +195,26 @@ export default {
             }
         }
     }
+
+    button {
+        /* border: none; */
+        padding: .6rem 1.9rem;
+        background-color:$skyBlue;
+        border:1px solid $lightBlue;
+        
+    }
+
+    .btn-amazon {
+        background-color:$skyBlue;
+        border-right: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    
+    .btn-apple {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }
 
 
@@ -195,6 +226,7 @@ export default {
 a {
     text-decoration: none;
     color: black;
+
 }
 
 /* //# smal squares  */
