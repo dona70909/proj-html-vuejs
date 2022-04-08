@@ -4,7 +4,7 @@
         <!-- //# container left article -->
         <div class="col-6 col-md-8 article-card">
             <h3>Damon Vaugh</h3>
-            <div  class="article" v-for="(article) in mainArticles" :key="article.id">
+            <div v-show="article.id == counter" class="article" v-for="(article) in mainArticles" :key="article.id">
                 <div class="main-article">
                     <p>
                         {{article.paragraph}}
@@ -90,35 +90,26 @@ export default {
                 }
             ],
 
-            
+            counter:0,
         }
     },
 
     methods:{
         leftArticle(){
-            /* this.mainArticles[0].active = false;
-            this.mainArticles[2].active = true; */
-            /*     let activeIndex = 0;
-            this.mainArticles[activeIndex].active === false;
-            
-            console.log(this.mainArticles[activeIndex].source);
-            if(activeIndex === 0){
-                activeIndex = this.mainArticles.length - 1;
-            } else {
-                activeIndex--;
+            if(this.counter == 0){
+                this.counter == this.mainArticles.length - 1;
+            } else{
+                this.counter--;
             }
-
-            this.mainArticles[activeIndex - 1].active === true;
-            console.log(this.mainArticles[activeIndex - 1].source) */
-
-            const first = this.mainArticles.shift();
-            this.mainArticles = this.mainArticles.concat(first);
         },
 
 
         rightArticle(){
-            const last = this.mainArticles.pop();
-            this.mainArticles = [last].concat(this.mainArticles);
+            if(this.counter == this.mainArticles.length - 1){
+                this.counter == 0;
+            } else{
+                this.counter++;
+            }
         }
 
 
