@@ -117,6 +117,8 @@ export default {
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap');
 
+@import './src/assets/scss/partials/_variables.scss';
+
 /* //#  ARTICLE LEFT NEW YORK TIMES */
 .article-card-container{
     padding-left:5rem;
@@ -124,7 +126,7 @@ export default {
     .article-card{
         height: 100%;
         h3{
-            color:darkgoldenrod;
+            color:$saffronOrangeGold;
             font-size: 5rem;
             font-family: 'Caveat', cursive;
         }
