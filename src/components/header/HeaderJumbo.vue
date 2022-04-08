@@ -9,7 +9,7 @@
                     <p>
                         {{article.paragraph}}
                     </p>
-                    <address class="author">-<a rel="author" :href="article.sourceLink">{{article.source}}</a></address>
+                    <address class="author"><a rel="author" :href="article.sourceLink">{{" - " + article.source}}</a></address>
                 </div>
             </div>
 
@@ -116,7 +116,8 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import './src/assets/scss/partials/_variables.scss';
 
 /* //#  ARTICLE LEFT NEW YORK TIMES */
@@ -139,11 +140,14 @@ export default {
         p {
             font-size: 2.5rem;
             color:#ffffff;
+            font-family: 'PT Serif', serif;;
         }
 
         .author {
             color:$osloGray;
-            font-family: 'italic';
+            font-size: 1.5rem;
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 400;
         }
 
         .scroll-btn {
