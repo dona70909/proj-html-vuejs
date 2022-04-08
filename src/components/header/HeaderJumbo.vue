@@ -115,6 +115,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap');
 
 /* //#  ARTICLE LEFT NEW YORK TIMES */
 .article-card-container{
@@ -124,8 +125,8 @@ export default {
         height: 100%;
         h3{
             color:darkgoldenrod;
-            font-size: 3.8rem;
-            font-family:'italic';
+            font-size: 5rem;
+            font-family: 'Caveat', cursive;
         }
         
         a{
