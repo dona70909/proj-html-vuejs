@@ -96,7 +96,7 @@ export default {
             /* this.mainArticles[0].active = false;
             this.mainArticles[2].active = true; */
             let activeIndex = 0;
-            this.mainArticles[activeIndex].active === false;
+            
             console.log(this.mainArticles[activeIndex].source)
             if(activeIndex === 0){
                 activeIndex = this.mainArticles.length - 1;
@@ -104,7 +104,11 @@ export default {
                 activeIndex--;
             }
 
+            this.mainArticles[activeIndex].active === false;
+            
             this.mainArticles[activeIndex - 1].active === true;
+
+            
             console.log(this.mainArticles[activeIndex - 1].source)
         }
     }
