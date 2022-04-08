@@ -15,10 +15,10 @@
 
             <!-- buttons -->
             <div class="scroll-btn-container d-flex">
-                <div @click="leftArticle()" class="scroll-btn arrow-left m-2 d-flex align-items-center justify-content-center">
+                <div @click="leftArticle()" class="scroll-btn arrow-left me-1 d-flex align-items-center justify-content-center">
                     <i class="bi bi-arrow-left-short fs-2 text-white"></i>
                 </div>
-                <div @click="rightArticle()" class="scroll-btn arrow-right m-2 d-flex align-items-center justify-content-center">
+                <div @click="rightArticle()" class="scroll-btn arrow-right d-flex align-items-center justify-content-center">
                     <i class="bi bi-arrow-right-short fs-2 text-white "></i>
                 </div>
                 
@@ -71,21 +71,18 @@ export default {
                     paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
                     source:"The New York Times",
                     sourceLink:"#/",
-                    active:true,
                     id:0,
                 },
                 {
                     paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
                     source:"The Globe and Mail",
                     sourceLink:"#/",
-                    active:false,
                     id:1,
                 },
                 {
                     paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
                     source:"The Independent",
                     sourceLink:"#/",
-                    active:false,
                     id:2,
                 }
             ],
@@ -152,7 +149,7 @@ export default {
         .scroll-btn{
             width: 2.5rem;
             height: 2.5rem;
-            background-color: red;
+            background-color: black;
             cursor: pointer;
 
             i{
