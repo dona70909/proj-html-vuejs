@@ -1,20 +1,27 @@
 <template>
     <section class="container-fluid">
-        <div class="row pe-5 container-footer align-items-center">
-            <div class="col-2">
+        <div class="row pe-5 container-footer align-items-start">
+            <div class="col-2 ">
                 <img :src="require('@/assets/img/author-logo-round-small.png')" alt="">
             </div>
             <div class="col-3">
-                <h5>About me </h5>
+                <h5 class="mb-3">About me</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique voluptatibus nostrum maxime distinctio veritatis quis.</p>
             </div>
             <div class="col-3">
-                <h5>Usefil Links</h5>
+                <h5 class="mb-3">Useful Links</h5>
                 <ul>
                     <li v-for="(link,index) in usefulLinks" :key="index + 'usefullinks'">
                         <a :href="link.url"> <i class="bi bi-chevron-right me-2"></i> {{link.text}}</a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-3">
+                <h5>Contact info</h5>
+                <p class="text-white">63 E.Studebaker Street Bollingbrook, II 60440</p>
+                <p class="text-white">Phone: (800)000-000</p>
+                <p class="text-white">Mobile: (800)000-000</p>
+                <p class="text-white">Email: info@yourcompany.com</p>
             </div>
         </div>
     </section>
@@ -47,7 +54,14 @@ export default {
                     url:'#',
                     text:'Visit my foundation'
                 }
-            ]
+            ],
+
+            contactInfo:{
+                address:"63 E.Studebaker Street Bollingbrook, II 60440",
+                phone:"(800)000-000",
+                mobile:"(800)000-000",
+                email:"info@yourcompany.com"
+            }
         }
     }
 }
@@ -56,7 +70,7 @@ export default {
 <style lang="scss" scoped>
 .container-footer{
     padding-top: 7rem;
-
+    
     a{
         text-decoration: none;
         color: white;
@@ -67,7 +81,7 @@ export default {
     }
 
     img{
-        width:100% ;
+        width:70%;
     }
 
     ul{
@@ -75,4 +89,5 @@ export default {
         padding:0;
     }
 }
+
 </style>
