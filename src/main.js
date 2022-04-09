@@ -3,6 +3,18 @@ import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
+import {library}  from '@fortawesome/fontawesome-svg-core'
+import {faCoffee}  from '@fortawesome/free-solid-svg-icons'
+
+import {FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { fas } from "@fortawesome/free-solid-svg-icons";
+    
+library.add(fas);
+
+library.add(faCoffee)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 
 Vue.config.productionTip = false
 

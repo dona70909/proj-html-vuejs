@@ -11,8 +11,12 @@
             <div class="col-3">
                 <h5 class="mb-3">Useful Links</h5>
                 <ul>
-                    <li v-for="(link,index) in usefulLinks" :key="index + 'usefullinks'">
-                        <a :href="link.url"> <i class="bi bi-chevron-right me-2"></i> {{link.text}}</a>
+                    <li class="mb-1" v-for="(link,index) in usefulLinks" :key="index + 'usefullinks'">
+                        <a class="d-flex align-items-center" :href="link.url"> 
+                            <!-- <i class="bi bi-chevron-right"></i> -->
+                            <font-awesome-icon class="font-icon me-2" icon="fa-solid fa-chevron-right" />
+                            {{link.text}}
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -69,25 +73,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './src/assets/scss/style.scss';
+
 .container-footer{
     padding-top: 7rem;
+    color: white;
+
+    h5 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
     
-    a{
+    a {
         text-decoration: none;
         color: white;
     }
 
-    p{
-        color: rgb(172, 168, 168);
-    }
-
-    img{
+    img {
         width:70%;
     }
 
-    ul{
+    ul {
         list-style: none;
         padding:0;
+    }
+
+    .font-icon {
+        font-weight: 900;
+        font-size: 1.5rem;
+        transform: scale(.5);
     }
 }
 

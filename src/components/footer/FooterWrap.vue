@@ -18,10 +18,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './src/assets/scss/style.scss';
     footer{
         background-image:url('@/assets/img/footer-3.jpg');
        /*  height: 600px; */
         object-fit: center;
         background-position-x: 50%;
+        font-family: 'PT Serif', serif;
     }
 </style>
