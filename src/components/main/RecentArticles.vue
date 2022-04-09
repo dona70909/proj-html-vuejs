@@ -1,12 +1,12 @@
 <template>
-    <section class="container-fluid bg-color">
+    <section class="container-fluid container-section">
         <div class="row px-5 py-5 justify-content-between px-5">
-            <div class="col-6 px-5">
-                <h2 class="text-capitalize">Recent articles</h2>
-                <h6 class="text-uppercase">Read the latest entries</h6>
-            </div>
-            <div class="col-6 px-5 d-flex justify-content-end align-items-center">
-                <button class="px-3">All Articles</button>
+            <div class="col-12 justify-content-between d-flex align-items-center title-section">
+                <div class="text-left">
+                    <h2 class="text-capitalize">Recent articles</h2>
+                    <h6 class="text-uppercase">Read the latest entries</h6>
+                </div>
+                <button class="btn-all-artcles"><a href="#/">All articles</a></button>
             </div>
         </div>
         <div class="row px-5 wrapper-articles  justify-content-center">
@@ -62,16 +62,50 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './src/assets/scss/style.scss';
 
-.bg-color{
+/* //% bg colour section */
+.container-section {
     background-color: #fef7e9;
+    font-family: 'PT Serif', serif;
+}
+/*reset margin p(s) */
+p {
+    margin: 0;
 }
 
-button{
-    background-color: #f4b429;
-    color: white;
-    border:none;
+// % top titles section
+.title-section {
+
+    h2 {
+        font-weight: 600;
+    }
+
+    h6 {
+        color:$greenKeppel;
+        font-weight: 600;
+    }
+
+    button{
+        background-color: #f4b429;
+        border:none;
+        padding: .5rem 3.6rem;
+        border-radius: 5px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        
+        a {
+            font-size: .7rem;
+            color:white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+
 }
+
+/* //% articles big one to the left and small ones to the right  */
 .wrapper-articles {
     padding-bottom: 6rem;
 
@@ -99,10 +133,7 @@ button{
 
     }
 }
-/*reset margin p(s) */
-p{
-    margin: 0;
-}
+
 
 
 </style>
