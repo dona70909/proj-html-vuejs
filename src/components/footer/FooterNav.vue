@@ -26,6 +26,13 @@
                 <p class="text-white">Phone: (800)000-000</p>
                 <p class="text-white">Mobile: (800)000-000</p>
                 <p class="text-white">Email: info@yourcompany.com</p>
+                <div class="d-flex justify-content-between w-50">
+                    <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                    <font-awesome-icon icon="fa-brands fa-twitter" />
+                    <font-awesome-icon icon="fa-brands fa-instagram" />
+                    <font-awesome-icon icon="fa-brands fa-youtube" />
+                    <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+                </div>
             </div>
             <div class="offset-1"></div> 
         </div>
@@ -33,6 +40,7 @@
 </template>
 
 <script>
+
 export default {
     name:"FooterNav",
 
