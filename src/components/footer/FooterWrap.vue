@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
     footer{
         background-image:url('@/assets/img/footer-3.jpg');
-        height: 600px;
+       /*  height: 600px; */
         object-fit: center;
         background-position-x: 50%;
     }
