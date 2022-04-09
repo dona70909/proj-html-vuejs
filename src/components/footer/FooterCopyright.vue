@@ -18,13 +18,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .copyright-container{
     padding-top: 13rem;
-
-    img{
-        width:1.2rem;
-        color:white;
-    } 
 }
 
 </style>
