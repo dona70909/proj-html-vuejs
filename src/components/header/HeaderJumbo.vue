@@ -84,13 +84,13 @@ export default {
                     id:0,
                 },
                 {
-                    paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
+                    paragraph:"Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.",
                     source:"The Globe and Mail",
                     sourceLink:"#/",
                     id:1,
                 },
                 {
-                    paragraph:"Best-selling Author and the most influential public intellectualin the western world right now.",
+                    paragraph:"Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
                     source:"The Independent",
                     sourceLink:"#/",
                     id:2,
@@ -104,8 +104,10 @@ export default {
     methods:{
         leftArticle(){
             if(this.counter == 0){
-                this.counter == this.mainArticles.length - 1;
-            } else{
+                console.log(this.counter);
+                this.counter = this.mainArticles.length - 1;
+                console.log(this.counter);
+            } else {
                 this.counter--;
             }
         },
@@ -113,7 +115,7 @@ export default {
 
         rightArticle(){
             if(this.counter == this.mainArticles.length - 1){
-                this.counter == 0;
+                this.counter = 0;
             } else{
                 this.counter++;
             }
