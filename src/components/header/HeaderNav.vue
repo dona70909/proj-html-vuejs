@@ -56,6 +56,10 @@ ul{
         color:white;
         text-decoration: none;
         line-height: 194px;
+
+        &:hover {
+            color:$saffronOrangeGold;
+        }
     }
 }
 </style>
