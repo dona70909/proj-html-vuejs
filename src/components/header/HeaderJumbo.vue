@@ -20,7 +20,6 @@
                 <div @click="rightArticle()" class="scroll-btn arrow-right d-flex align-items-center justify-content-center">
                     <i class="bi bi-arrow-right-short fs-2 text-white "></i>
                 </div>
-                
             </div>
         </div>
         <!-- //# container right kindle latest book and icons -->
@@ -125,7 +124,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* @import './src/assets/scss/partials/_variables.scss'; */
 @import './src/assets/scss/style.scss';
 
 /* //#  ARTICLE LEFT NEW YORK TIMES */
@@ -172,11 +170,41 @@ export default {
     }
 }
 
+
 /* //#  ARTICLE Right kindle */
 .latest-book-container {
     height: 100%;
     font-family: 'EB Garamond', serif;
 
+    /* //% small squares on sale and Demos  */
+    .square {
+        width:3rem;
+        height: 3rem;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:1.5rem 0rem;
+        background-color: white;
+        margin-bottom:1rem;
+
+        p {
+            font-size: .8rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        img {
+            font-size: .6rem;
+        }
+        .price-tag {
+            color: $greenPrice;
+            font-size: 1.2rem;
+        }
+    }
+
+    /* //% article + kindle image */
     .latest-book-card {
     background-color: white;
     color:black;
@@ -201,6 +229,7 @@ export default {
         }
     }
 
+    //% buttons amazon and apple buy
     button {
         /* border: none; */
         padding: .5rem 0;
@@ -232,45 +261,24 @@ export default {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-}
 
-
-.btn-logo {
-    height: 1rem;
-    margin-right: .2rem;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-
-}
-
-/* //# small squares on sale and Demos  */
-.square {
-    width:3rem;
-    height: 3rem;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding:1.5rem 0rem;
-    background-color: white;
-    margin-bottom:1rem;
-
-    p {
-        font-size: .8rem;
-        font-weight: 600;
-        margin: 0;
+    .btn-logo {
+        height: 1rem;
+        margin-right: .2rem;
     }
 
-    img {
-        font-size: .6rem;
-    }
-    .price-tag {
-        color: $greenPrice;
-        font-size: 1.2rem;
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 0 .2rem;
+
     }
 }
+
+
+
+
+
+
+
 </style>

@@ -39,11 +39,23 @@ name:"HeaderNav"
 </script>
 
 <style lang="scss" scoped>
+@import './src/assets/scss/style.scss';
+
 ul{
     list-style: none;
+    li {
+
+        border-top:4px solid transparent;
+    }
+
+    li:hover {
+        border-top: 4px solid $saffronOrangeGold;
+        height: 194px;
+    }
     a{
         color:white;
         text-decoration: none;
+        line-height: 194px;
     }
 }
 </style>
