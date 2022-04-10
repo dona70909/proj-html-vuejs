@@ -1,18 +1,32 @@
 <template>
     <!-- header's child component? -->
     <div class="row align-items-center justify-content-between px-5">
-        <div class="col-6">
+        <div class="col-4">
             <img :src="require('@/assets/img/author-logo-round-small.png')" alt="logo header">
         </div>
-        <nav class="col-6">
-            <ul class="d-flex justify-content-evenly">
-                <li><a href="#/">About me</a></li>
-                <li><a href="#/">Testimonials</a></li>
-                <li><a href="#/">My Dig</a></li>
-                <li><a href="#/">Meetups</a></li>
-                <li><a href="#/">Shop</a></li>
-                <li><a href="#/">Contact me</a></li>
-                <li>icon</li>
+        <nav class="col-8">
+            <ul class="d-flex justify-content-around">
+                <li>
+                    <a href="#/">About me</a>
+                </li>
+                <li>
+                    <a href="#/">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#/">My Dig</a>
+                </li>
+                <li>
+                    <a href="#/">Meetups</a>
+                </li>
+                <li>
+                    <a href="#/">Shop</a>
+                </li>
+                <li>
+                    <a href="#/">Contact me</a>
+                </li>
+                <li>
+                    <a href="#/"><i class="bi bi-cart3"></i></a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -28,7 +42,7 @@ name:"HeaderNav"
 ul{
     list-style: none;
     a{
-        color:#868586;
+        color:white;
         text-decoration: none;
     }
 }

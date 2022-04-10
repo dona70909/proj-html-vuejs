@@ -1,8 +1,8 @@
 <template>
     <!-- header's child component? -->
-    <div class="row justify-content-center article-card-container">
+    <div class="row article-card-container ">
         <!-- //# container left article -->
-        <div class="col-6 col-md-8 article-card">
+        <div class="col-8 article-card py-5">
             <h3>Damon Vaugh</h3>
             <div v-show="article.id == counter" class="article" v-for="(article) in mainArticles" :key="article.id">
                 <div class="main-article">
@@ -12,8 +12,7 @@
                     <address class="author"><a rel="author" :href="article.sourceLink">{{" - " + article.source}}</a></address>
                 </div>
             </div>
-
-            <!-- buttons -->
+            <!-- //& buttons -->
             <div class="scroll-btn-container d-flex">
                 <div @click="leftArticle()" class="scroll-btn arrow-left me-1 d-flex align-items-center justify-content-center">
                     <i class="bi bi-arrow-left-short fs-2 text-white"></i>
@@ -23,11 +22,9 @@
                 </div>
                 
             </div>
-
-            
         </div>
         <!-- //# container right kindle latest book and icons -->
-        <div class="col-6 col-md-4 latest-book-container px-0">
+        <div class="col-4 latest-book-container px-0 align-self-end">
             <!-- //% 2 sqaures -->
             <div class="d-flex flex-column mb-4 text-white px-2">
                 <div class="square demos-square align-self-end">
@@ -41,9 +38,11 @@
                 </div>
             </div>
             <!-- //% latest book container -->
-            <div class="latest-book-card px-3">
-                <div class="d-flex justify-content-around">
-                    <img class="img-fluid img-kindle-book" :src="require('@/assets/img/book-widget.png')" alt="book">
+            <div class="latest-book-card px-5 py-4">
+                <div class="d-flex pt-3">
+                    <div class="img-kindle-container">
+                        <img class="img-fluid img-kindle-book" :src="require('@/assets/img/book-widget.png')" alt="book">
+                    </div>
                     <div class="kindle-text">
                         <h5>Latest Book Relese</h5>
                         <h6 class="author-latest">D.Vaughn Autobiography</h6>
@@ -61,7 +60,7 @@
                     <button class="btn-apple">
                         <a href="#/">
                         <img class="btn-logo" :src="require('@/assets/img/apple-logo.png')" alt=""> 
-                        Buy on app store
+                        Buy on AppStore
                         </a>
                     </button>
                 </div>
@@ -181,33 +180,31 @@ export default {
     .latest-book-card {
     background-color: white;
     color:black;
-    padding: 2rem 0rem;
-    //height: 80%; 
     
         .img-kindle-book {
+            object-fit: contain;
             height: 100%;
-            width: 50%;
         }
 
         .kindle-text {
-            width: 50%;
-            //font-family: 'EB Garamond', serif;
-            
+            width: 100%;
+            height: 100%;
             p {
-                font-size: 1rem;
+                font-size: .8rem;
             }
 
             .author-latest {
                 color:$saffronOrangeGold;
                 text-transform: uppercase;
-                font-size: .8rem;
+                font-size: .7rem;
             }
         }
     }
 
     button {
         /* border: none; */
-        padding: .6rem 1.9rem;
+        padding: .5rem 0;
+        width:100%;
         background-color:white;
         border:1px solid $lightBlue;
         
@@ -216,7 +213,12 @@ export default {
         }
 
         a:hover{
-            color:black
+            color:black;
+        }
+
+        a {
+            font-size: .8rem;
+            font-weight: 600;
         }
     }
 
@@ -265,7 +267,6 @@ a {
 
     img {
         font-size: .6rem;
-        font-weight: 600;
     }
     .price-tag {
         color: $greenPrice;
