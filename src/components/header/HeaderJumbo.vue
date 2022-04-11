@@ -48,7 +48,7 @@
                         <img class="img-fluid img-kindle-book" :src="require('@/assets/img/book-widget.png')" alt="book">
                     </div>
                     <div class="kindle-text">
-                        <h5>Latest Book Relese</h5>
+                        <h5>Latest Book Relaese</h5>
                         <h6 class="author-latest">D.Vaughn Autobiography</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dignissimos voluptatum eveniet soluta labore mollitia repudiandae recusandae itaque!</p>
                     </div>
