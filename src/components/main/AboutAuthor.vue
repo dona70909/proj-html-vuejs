@@ -1,6 +1,6 @@
 <template>
     <section class="container-fluid">
-        <div class="row px-5 pb-2 pt-3 justify-content-center align-items-center container-section">
+        <div class="row px-5 pb-2 pt-5 justify-content-center align-items-center container-section">
             <div class="col-12">
                 <div class="title text-center mb-5">
                     <h2 class="title-section">Dig a little deeper into damon vaugh</h2>
@@ -55,8 +55,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @import './src/assets/scss/style.scss';
+
 .container-section {
     font-family: 'PT Serif', serif;
     .title-section {
@@ -65,7 +65,7 @@ export default {
 
     .subtitle-section {
         text-transform: uppercase;
-        color:$saffronOrangeGold;
+        color:$greenKeppel;
     }
 
 
@@ -82,7 +82,6 @@ export default {
             
         }
         .text-card {
-            /* align-self: flex-end; */
             bottom: 0; 
             hr {
                 margin: 0 auto;

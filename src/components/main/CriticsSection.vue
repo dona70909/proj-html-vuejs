@@ -114,10 +114,10 @@ export default {
     background-image: url('@/assets/img/testimonial2-2x.jpg');
     padding: 3rem; 
     border-bottom-right-radius: 40px;
-
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    
     .link-article {
         background-color: black;
     }

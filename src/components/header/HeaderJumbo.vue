@@ -26,13 +26,16 @@
         <div class="col-4 latest-book-container px-0 align-self-end">
             <!-- //% 2 sqaures -->
             <div class="d-flex flex-column mb-4 text-white px-2">
-                <div class="square demos-square align-self-end">
+                <div class="square demos-square align-self-end py-1">
                     <i class="bi bi-book-fill"></i>
                     <p>Demos</p>
                 </div>
-                <div class="square on-sale-square align-self-end">
+                <div class="square on-sale-square align-self-end py-1">
                     <!-- <img src="" alt="img"> -->
-                    <p class="price-tag">39</p>
+                    <div class="d-flex justify-content-center">
+                        <i class="bi bi-currency-dollar align-self-start"></i>
+                        <p class="price-tag">39</p>
+                    </div>
                     <p>On Sale</p>
                 </div>
             </div>
@@ -201,6 +204,12 @@ export default {
         .price-tag {
             color: $greenPrice;
             font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .bi-currency-dollar {
+            color: $greenPrice;
+            font-size: .7rem;
         }
     }
 
