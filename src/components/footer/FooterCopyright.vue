@@ -4,7 +4,7 @@
             <div class="col-12 pt-5 copyright-container text-white text-center">
                 <p class="mb-0 pb-5 pb-2">
                     <font-awesome-icon class="me-2" icon="fa-solid fa-copyright" />
-                    Copyright 2012-2020 | Avada Theme by <span class="text-white">ThemeFusion</span> | All Rights Reserved | Powered by <span class="text-white">Wordpress</span>
+                    Copyright 2012-2020 | Avada Theme by <span class="text-white m-1"> ThemeFusion </span> | All Rights Reserved | Powered by <span class="text-white m-1">Wordpress</span>
                 </p>
             </div>
         </div>
