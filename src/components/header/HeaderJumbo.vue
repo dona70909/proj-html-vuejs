@@ -4,7 +4,7 @@
         <!-- //# container left article -->
         <div class="col-8 article-card py-5 ">
             <h3>Damon Vaugh</h3>
-            <TransitionGroup  name="fade" tag="div" class="d-flex">
+            <TransitionGroup  name="slide-fade" tag="div" class="d-flex">
                 <div v-show="article.id == counter"  class="article" v-for="(article) in mainArticles" :key="article.id">
                     <div class="main-article">
                         <p>
@@ -193,10 +193,14 @@ export default {
     }
 }
 
-.fade-enter-active, .fade-leave-active {
-    transition: opacity .7s;
+.slide-fade-enter-active {
+    transition: all .3s ease;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
     opacity: 0;
 }
 
