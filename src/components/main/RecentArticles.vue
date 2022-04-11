@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="row px-5 wrapper-articles  justify-content-center">
-            <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+            <div class="col-lg-9 col-12 mb-lg-0 mb-4">
                 <div class="big-box">
                     <img :src="mainArticle.img" :alt="mainArticle.title">
                     <div class="text-big-box">
