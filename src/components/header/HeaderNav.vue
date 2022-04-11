@@ -4,7 +4,7 @@
         <div class="col-4 d-none d-lg-block px-5">
             <img :src="require('@/assets/img/author-logo-round-small.png')" alt="logo header">
         </div>
-        
+        <!-- //& 'responsive' -->
         <div class="col-6  bg-black d-block d-lg-none bg-black px-5">
             <img :src="require('@/assets/img/author-logo-round-small.png')" alt="logo header">
         </div>
@@ -33,6 +33,7 @@
                 </li>
             </ul>
         </nav>
+        <!-- //& 'responsive' -->
         <div class="col-6  d-block d-lg-none pe-5 bg-black ">
             <i @click="isClicked()" class="bi bi-list  d-flex align-items-center  justify-content-end fs-1 text-white container-hamburgher"></i>
         </div>
@@ -87,7 +88,7 @@ export default {
 <style lang="scss" scoped>
 @import './src/assets/scss/style.scss';
 
-.list-inline{
+.list-inline {
     li {
         border-top:4px solid transparent;
     }
@@ -96,7 +97,7 @@ export default {
         border-top: 4px solid $saffronOrangeGold;
         height: 194px;
     }
-    a{
+    a {
         color:white;
         font-weight: 600;
         line-height: 194px;
@@ -122,7 +123,7 @@ export default {
     li:hover {
         background-color:$saffronOrangeGold;
     }
-    a{
+    a {
         color:black;
         padding: 5px;
         text-transform: uppercase;
