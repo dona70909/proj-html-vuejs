@@ -29,17 +29,17 @@ export default {
         return{
             upcomings:[
                 {
-                    title:"Card title",
+                    title:"Chicago book signing",
                     paragraph:"Some quick example text to build on the card title and make up the bulk of the card's content.",
                     image:require('@/assets/img/event-05-400x240.jpg'),
                 },
                 {
-                    title:"Card title",
+                    title:"Meet & greet with amanda",
                     paragraph:"Some quick example text to build on the card title and make up the bulk of the card's content.",
                     image:require('@/assets/img/event-04-400x240.jpg'), 
                 },
                 {
-                    title:"Card title",
+                    title:"Open book: dialogues",
                     paragraph:"Some quick example text to build on the card title and make up the bulk of the card's content.",
                     image:require('@/assets/img/event-07-400x240.jpg'),
                 }
@@ -74,6 +74,7 @@ export default {
 
         h5 {
             font-weight: 400;
+            text-transform: capitalize;
         }
 
         p {
