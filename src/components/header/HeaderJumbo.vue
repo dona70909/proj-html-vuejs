@@ -85,13 +85,13 @@ export default {
                     id:0,
                 },
                 {
-                    paragraph:"Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.",
+                    paragraph:"Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget.",
                     source:"The Globe and Mail",
                     sourceLink:"#/",
                     id:1,
                 },
                 {
-                    paragraph:"Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+                    paragraph:"Donec sollicitudin molestie malesuada. Curabitur arcu erat.",
                     source:"The Independent",
                     sourceLink:"#/",
                     id:2,
@@ -150,6 +150,7 @@ export default {
             font-size: 2.5rem;
             color:#ffffff;
             font-family: 'PT Serif', serif;
+            height: 240px;
         }
 
         .author {
