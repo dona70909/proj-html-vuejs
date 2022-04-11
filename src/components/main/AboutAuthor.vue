@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="row px-5 pb-5 pt-2 justify-content-center container-section">
+        <div class="row px-5 pb-5 pt-2 justify-content-center container-section about-wrap-cards">
             <div v-for="(card) in cards" :key="card.title" class="col-lg-4 col-12 card-item d-flex mb-4 mb-lg-0 justify-content-center position-relative">
                 <img :src="card.image" :alt="card.title">
                 <div class="text-card bottom-0 align-self-end text-center pb-4 position-absolute">

@@ -1,5 +1,5 @@
 <template>
-    <section class="container-fluid bg-color">
+    <section class="container-fluid bg-color container-upcoming">
         <div class="row container-cards p-lg-5 p-3 justify-content-center">
             <div class="col-12">
                 <div class="title text-center mb-4">
@@ -51,6 +51,7 @@ export default {
 
 <style lang="scss" scoped>
 @import './src/assets/scss/style.scss';
+@import './src/assets/scss/partials/_mediaQueries.scss';
 
 .bg-color {
     background-color:#fef7e9;
@@ -71,7 +72,7 @@ export default {
 
     .card {
         font-family: 'PT Serif', serif;
-
+        
         &:hover img {
             filter: opacity(60%);
         }
