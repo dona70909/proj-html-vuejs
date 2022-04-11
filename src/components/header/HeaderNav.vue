@@ -98,7 +98,7 @@ export default {
     }
     a{
         color:white;
-        //text-decoration: none;
+        font-weight: 600;
         line-height: 194px;
 
         &:hover {
