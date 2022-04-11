@@ -72,6 +72,10 @@ export default {
     .card {
         font-family: 'PT Serif', serif;
 
+        &:hover img {
+            filter: opacity(60%);
+        }
+
         h5 {
             font-weight: 400;
             text-transform: capitalize;
