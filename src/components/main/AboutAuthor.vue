@@ -71,7 +71,7 @@ export default {
 
 
     .card-item {
-        height: 450px;
+        height: 430px;
         margin: 0 2rem;
 
         img {

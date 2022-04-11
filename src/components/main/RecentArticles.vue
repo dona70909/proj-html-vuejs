@@ -19,7 +19,7 @@
                         <div class="mb-3">
                             <span class="gray-text">By </span><span>{{mainArticle.author}}</span>
                             <span class="gray-text">{{' | ' + mainArticle.date + ' | '}}</span>
-                            <span class="gray-text">Categories: </span><span>{{mainArticle.categories + ' | '}}</span>
+                            <span class="gray-text">Categories: </span><span>{{mainArticle.categories}}</span>
                         </div>
                         <p class="gray-text">{{mainArticle.paragraph}}</p>
                     </div>
@@ -31,7 +31,7 @@
                     <img :src="article.img" :alt="article.title">
                     <div class="mb-0">
                         <span class="gray-text">{{article.date + ' |'}} </span>
-                        <span>{{article.comments + ' |'}}</span>                        
+                        <span>{{article.comments}}</span>                        
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ export default {
                     title:"What's on your booklist",
                     comments:"0 comments",
                     author:"admin",
-                    date:"October 24th 2019",
+                    date:"October 24th, 2019",
                     img:require('@/assets/img/thumb-13-2x-320x202.jpg'),
                     paragraph:"October 24th, 2019 | 0 Comments"
                 },
@@ -58,7 +58,7 @@ export default {
                     title:"Istanbul travel guide",
                     comments:"0 comments",
                     author:"admin",
-                    date:"October 24th 2019",
+                    date:"October 24th, 2019",
                     img:require('@/assets/img/thumb-08-2x-320x202.jpg'),
                     paragraph:"October 24th, 2019 | 0 Comments"
                 }
@@ -68,7 +68,7 @@ export default {
                 title:"C20 Creativity Tips",
                 categories:"Event,Tips & Tricks",
                 author:"admin",
-                date:"October 24th 2019",
+                date:"October 24th, 2019",
                 img:require('@/assets/img/20-Tips-400x235.jpg'),
                 paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia non sit error! Praesentium, magnam. Velit quod esse, similique laboriosam."
             }

@@ -7,7 +7,7 @@
                     <h6 class="text-uppercase subtitle-article">Be Notified about book signing tour dates</h6>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mb-3">
-                    <input class="email-input me-3" type="text" placeholder="insert your mail...*">
+                    <input class="email-input me-3" type="text" placeholder="Insert your mail...*">
                     <button class="d-flex justify-content-center align-items-center green-btns">
                         <a href="#/">Subscribe now!</a>
                     </button>

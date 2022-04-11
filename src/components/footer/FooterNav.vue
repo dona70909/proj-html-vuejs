@@ -6,7 +6,7 @@
             </div>
             <div class="col-lg-3 col-12 mb-lg-0 mb-3 px-0 px-5">
                 <h5 class="mb-3">About me</h5>
-                <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique voluptatibus nostrum maxime distinctio veritatis quis.</p>
+                <p class="dark-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique voluptatibus nostrum maxime distinctio veritatis quis.</p>
             </div>
             <div class="col-lg-3 col-12 mb-lg-0 mb-3 px-0 px-5">
                 <h5 class="mb-3">Useful Links</h5>
@@ -21,10 +21,10 @@
             </div>
             <div class="col-lg-3 col-12 mb-lg-0 mb-3 px-0 px-5">
                 <h5 class="mb-3">Contact info</h5>
-                <p class="text-gray">63 E.Studebaker Street Bollingbrook, II 60440</p>
-                <p class="text-gray">Phone: (800)000-000</p>
-                <p class="text-gray">Mobile: (800)000-000</p>
-                <p class="text-gray">Email: info@yourcompany.com</p>
+                <p class="dark-white">63 E.Studebaker Street Bollingbrook, II 60440</p>
+                <p class="dark-white">Phone: (800)000-000</p>
+                <p class="dark-white">Mobile: (800)000-000</p>
+                <p class="dark-white">Email: info@yourcompany.com</p>
                 <div class="d-flex justify-content-around justify-content-lg-between w-50 text-gray">
                     <font-awesome-icon icon="fa-brands fa-facebook-f" />
                     <font-awesome-icon icon="fa-brands fa-twitter" />
@@ -107,6 +107,10 @@ export default {
 
     .text-gray {
         color:$osloGray;
+    }
+    
+    .dark-white {
+        color: $darkWhite;
     }
 }
 
