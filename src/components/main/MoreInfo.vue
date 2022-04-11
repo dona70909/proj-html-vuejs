@@ -1,6 +1,6 @@
 <template>
     <section class="container-fluid">
-        <div class="row px-5 justify-content-center text-center align-content-center info-container">
+        <div class="row p-5 justify-content-center text-center align-content-center info-container">
             <div class="col-lg-8 col-12 d-flex flex-column align-content-center">
                 <h2 class="author-name">More About Damon Vaughn</h2>
                 <p class="text-center text-article">Damon Vaughn is a professor of psychology at the University of Toronto, a clinical psychologist and the author of the multi-milion copy bestseller "The story of my life</p>
@@ -31,7 +31,7 @@ export default {
 @import './src/assets/scss/style.scss';
 
 .info-container {
-    height: 300px;
+    //height: 300px;
 
     .author-name {
         color:$saffronOrangeGold;
@@ -44,10 +44,6 @@ export default {
     }
 
     button {
-        //border:none;
-        //color: white;
-        //background-color: $greenDark;
-         //border-radius: 7px;
         padding: .5rem 1.7rem;
         
         font-family: 'PT Serif', serif;
