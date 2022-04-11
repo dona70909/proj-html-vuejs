@@ -182,6 +182,7 @@ export default {
     }
 }
 
+/* //%  Carousel transitions */
 .slide-fade-enter-active {
     transition: all .3s ease;
 }
@@ -205,14 +206,16 @@ export default {
     .square {
         width:3rem;
         height: 3rem;
+        border-radius: 5px;
+        padding:1.5rem 0rem;
         color: black;
+        background-color: white;
+        margin-bottom:.3rem;
+
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding:1.5rem 0rem;
-        background-color: white;
-        margin-bottom:1rem;
 
         p {
             font-size: .8rem;
