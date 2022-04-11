@@ -78,9 +78,14 @@ export default {
             border-bottom-right-radius: 50px;
             width:100%;
             filter:brightness(50%);
-            filter:drop-shadow(50%);
-            
+            box-shadow: 2px 2px 2px black;
         }
+
+        &:hover img {
+            transform: scale(1.03);
+            transition: transform .35s;
+        }
+
         .text-card {
             bottom: 0; 
             hr {
