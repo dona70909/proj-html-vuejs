@@ -111,6 +111,10 @@ p {
         a {
             font-size: .7rem;
             font-weight: 600;
+
+            &:hover {
+                pointer-events: none;
+            }
         }
     }
 

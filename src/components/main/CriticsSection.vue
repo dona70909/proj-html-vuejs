@@ -176,7 +176,7 @@ button {
 
 a {
     color: $osloGray;
-
+    
     span {
         color:$black;
     }
