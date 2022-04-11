@@ -37,7 +37,8 @@
 
                     <div class="link-article w-75 text-white mb-2">
                         <a :href="article.link">
-                            <img class="me-3" :src="article.logo" alt="nytimes">{{article.author}}
+                            <img class="me-3" :src="article.logo" alt="nytimes">
+                            {{article.author + ', '}}
                             <span class="newspaper-name">
                                 {{article.logoName}}
                             </span>
