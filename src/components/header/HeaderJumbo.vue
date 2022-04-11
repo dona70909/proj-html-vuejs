@@ -27,7 +27,7 @@
         <!-- //# container right kindle latest book and icons -->
         <div class="col-12 col-lg-4 latest-book-container px-5 px-lg-0 align-self-end">
             <!-- //% 2 sqaures -->
-            <div class="d-flex flex-column mb-4 text-white px-2">
+            <div class="d-flex flex-column mb-4 text-white mx-2">
                 <div class="square demos-square align-self-end py-1">
                     <i class="bi bi-book-fill"></i>
                     <p>Demos</p>
