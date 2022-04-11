@@ -21,9 +21,8 @@ export default {
 @import './src/assets/scss/style.scss';
     footer{
         background-image:url('@/assets/img/footer-3.jpg');
-       /*  height: 600px; */
-        object-fit: center;
-        background-position-x: 50%;
+        //background-position-x: 50%;
+        background-position:center top;;
         font-family: 'PT Serif', serif;
         background-repeat: no-repeat;
         background-size: cover;

@@ -7,6 +7,12 @@
                     Copyright 2012-2020 | Avada Theme by <span class="text-white m-1"> ThemeFusion </span> | All Rights Reserved | Powered by <span class="text-white m-1">Wordpress</span>
                 </p>
             </div>
+
+            <div class="col-12 px-5 d-flex justify-content-end">
+                <div class="rectangle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-chevron-up text-white"></i>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -23,6 +29,16 @@ export default {
 .copyright-container{
     p {
         color:$osloGray;
+        font-size: .7rem;
+    }
+}
+
+.rectangle {
+    width: 2rem;
+    height: 1.7rem;
+    background-color:rgb(47, 47, 47);
+
+    i {
         font-size: .7rem;
     }
 }
