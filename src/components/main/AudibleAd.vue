@@ -34,7 +34,7 @@ export default {
 .bg-ad-audible {
     background-image: url('@/assets/img/banner.jpg');
     background-repeat: no-repeat;
-    background-position: 50% 30%;
+    background-position: 50% 67%;
 }
 
 .audible-screen {
