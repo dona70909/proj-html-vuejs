@@ -4,7 +4,6 @@
             <HeaderNav/>
             <HeaderJumbo/>
         </section>
-        <section class="linear"></section>
     </header>
 </template>
 
