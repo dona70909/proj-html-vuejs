@@ -114,6 +114,7 @@ p {
 
             &:hover {
                 pointer-events: none;
+                color: white;
             }
         }
     }

@@ -31,7 +31,6 @@ export default {
 @import './src/assets/scss/style.scss';
 
 .info-container {
-    //height: 300px;
 
     .author-name {
         color:$saffronOrangeGold;
@@ -41,6 +40,7 @@ export default {
 
     .text-article {
         font-family: 'PT Serif', serif;
+        font-weight: 500;
     }
 
     button {

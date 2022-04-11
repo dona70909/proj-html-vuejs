@@ -16,6 +16,14 @@ a {
     color:white;
 }
 
+a:focus-visible {
+    outline:transparent;
+}
+
+button:focus-visible {
+    outline:transparent;
+}
+
 ul {
     list-style: none;
     padding: 0;

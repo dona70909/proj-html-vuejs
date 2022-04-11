@@ -27,7 +27,7 @@ export default {
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:linear-gradient(180deg, rgba(97,97,97,0) 20%, rgba(10, 9, 9, 0.8) 80%),url('@/assets/img/hero-07-2x.jpg');
+    background-image:linear-gradient(180deg, rgba(97,97,97,.22) 20%, rgba(10, 9, 9, 0.8) 80%),url('@/assets/img/hero-07-2x.jpg');
 }
 
 

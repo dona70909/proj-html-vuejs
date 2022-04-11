@@ -46,23 +46,23 @@ export default {
         return{
             usefulLinks:[
                 {
-                    url:'#',
+                    url:'#/',
                     text:'Latest Books'
                 },
                 {
-                    url:'#',
+                    url:'#/',
                     text:'Upcoming Events'
                 },
                 {
-                    url:'#',
+                    url:'#/',
                     text:'Recent Articles'
                 },
                 {
-                    url:'#',
+                    url:'#/',
                     text:'Business Enquires'
                 },
                 {
-                    url:'#',
+                    url:'#/',
                     text:'Visit my foundation'
                 }
             ],
