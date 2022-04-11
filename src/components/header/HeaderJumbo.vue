@@ -1,8 +1,8 @@
 <template>
     <!-- header's child component? -->
-    <div class="row article-card-container ">
+    <div class="row article-card-container">
         <!-- //# container left article -->
-        <div class="col-8 article-card py-5 ">
+        <div class="col-8 article-card py-5">
             <h3>Damon Vaugh</h3>
             <TransitionGroup  name="slide-fade" tag="div" class="d-flex">
                 <div v-show="article.id == counter"  class="article" v-for="(article) in mainArticles" :key="article.id">
