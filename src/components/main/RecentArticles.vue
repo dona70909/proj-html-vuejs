@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="row px-5 wrapper-articles  justify-content-center">
-            <div class="col-6">
+            <div class="col-lg-6 col-12 mb-lg-0 mb-4">
                 <div class="big-box">
                     <img :src="mainArticle.img" :alt="mainArticle.title">
                     <div class="text-big-box">
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-12">
                 <div v-for="(article,index) in recentArticles" :key="index + 'recent' " class="small-box d-flex flex-column justify-content-center">
                     <h4 class="">{{article.title}}</h4>
                     <img :src="article.img" :alt="article.title">

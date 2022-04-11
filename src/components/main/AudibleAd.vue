@@ -1,10 +1,10 @@
 <template>
     <section class="container-fluid bg-ad-audible">
         <div class="row px-5 pt-4 justify-content-center">
-            <div class="col-6 px-0 d-flex justify-content-end">
+            <div class="col-lg-6 mb-lg-0 mb-4 col-12 px-0 d-flex justify-content-lg-end justify-content-center">
                 <img class="audible-screen" :src="require('@/assets/img/audible-app-2x-600x628.png')" alt="">
             </div>
-            <div class="col-6 px-0 container-article align-self-center text-white text-center">
+            <div class="col-lg-6 col-12 px-0 container-article text-white text-center mb-lg-0 mb-4">
                 <div class="text-article">
                     <h5 class="title-article">New Audiobook</h5>
                     <h6 class="subtitle-article">No time to read? No problem. Listen to it.</h6>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import './src/assets/scss/partials/_mediaQueries.scss';
 @import './src/assets/scss/style.scss';
 
 .bg-ad-audible {
@@ -41,6 +41,11 @@ export default {
     height: 300px;
 }
 .container-article {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 
     .title-article {
     color: white;
@@ -62,16 +67,6 @@ export default {
     img {
         width: 50%;
     }
-
-    .text-article {
-        width:50%;
-    }
-
-    .container-logos {
-        width: 50%;
-    }
-
-
 
 }
 

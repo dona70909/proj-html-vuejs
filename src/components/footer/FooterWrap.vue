@@ -25,5 +25,7 @@ export default {
         object-fit: center;
         background-position-x: 50%;
         font-family: 'PT Serif', serif;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 </style>

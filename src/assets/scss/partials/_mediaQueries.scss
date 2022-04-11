@@ -1,0 +1,27 @@
+/* solo regole valide  da 992px in poi*/
+@media (min-width: 992px) {
+    
+    .card-item {
+        height: 450px;
+        width:calc(100% / 3 - 4rem);
+        margin: 0 2rem;
+    }
+    
+    .article-card {
+        p {
+            height: 240px;
+        }
+    } 
+
+    .container-article {
+        align-self: center;
+
+        .text-article {
+            width:50%;
+        }
+    
+        .container-logos {
+            width: 50%;
+        }
+    }
+}

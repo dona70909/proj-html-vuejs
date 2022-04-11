@@ -10,7 +10,7 @@
         </div>
 
         <div class="row px-5 pb-5 pt-2 justify-content-center container-section">
-            <div v-for="(card) in cards" :key="card.title" class="col-4 card-item d-flex justify-content-center position-relative">
+            <div v-for="(card) in cards" :key="card.title" class="col-lg-4 col-12 card-item d-flex mb-4 mb-lg-0 justify-content-center position-relative">
                 <img :src="card.image" :alt="card.title">
                 <div class="text-card bottom-0 align-self-end text-center pb-4 position-absolute">
                     <h2 class="title-card pb-2">{{card.title}}</h2>
@@ -56,6 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 @import './src/assets/scss/style.scss';
+@import './src/assets/scss/partials/_mediaQueries.scss';
 
 .container-section {
     font-family: 'PT Serif', serif;
@@ -71,7 +72,6 @@ export default {
 
     .card-item {
         height: 450px;
-        width:calc(100% / 3 - 4rem);
         margin: 0 2rem;
 
         img {

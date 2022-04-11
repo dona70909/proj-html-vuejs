@@ -1,8 +1,8 @@
 <template>
     <!-- header's child component? -->
-    <div class="row article-card-container">
+    <div class="row article-card-container ps-lg-5 ps-0 flex-column flex-lg-row">
         <!-- //# container left article -->
-        <div class="col-8 article-card py-5">
+        <div class="col-12 col-lg-8 article-card px-5 py-5">
             <h3 class="author-name">Damon Vaugh</h3>
             <TransitionGroup  name="slide-fade" tag="div" class="d-flex">
                 <div v-show="article.id == counter"  class="article" v-for="(article) in mainArticles" :key="article.id">
@@ -25,9 +25,9 @@
             </div>
         </div>
         <!-- //# container right kindle latest book and icons -->
-        <div class="col-4 latest-book-container px-0 align-self-end">
+        <div class="col-12 col-lg-4 latest-book-container px-5 px-lg-0 align-self-end">
             <!-- //% 2 sqaures -->
-            <div class="d-flex flex-column mb-4 text-white px-2">
+            <div class="d-flex flex-column mb-4 text-white px-4">
                 <div class="square demos-square align-self-end py-1">
                     <i class="bi bi-book-fill"></i>
                     <p>Demos</p>
@@ -54,7 +54,6 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    
                     <button class="btn-amazon"> 
                     <a href="#/">
                         <img class="btn-logo" :src="require('@/assets/img/amazon-logo-small.png')" alt="amazon-logo">
@@ -124,25 +123,17 @@ export default {
             }
         },
 
-        timeOutLeft() {
-            setTimeout(this.leftArticle,2000);
-        },
-
-
-        timeOutRight() {
-            setTimeout(this.rightArticle,2000);
-        }
-
     }
 }
 </script>
 
 <style lang="scss" scoped>
 @import './src/assets/scss/style.scss';
+@import './src/assets/scss/partials/_mediaQueries.scss';
 
 /* //#  ARTICLE LEFT NEW YORK TIMES */
 .article-card-container {
-    padding-left:5rem;
+    //padding-left:5rem;
     height: 100%; 
     .article-card {
         height: 100%;
@@ -168,7 +159,6 @@ export default {
             font-size: 2.5rem;
             color:#ffffff;
             font-family: 'PT Serif', serif;
-            height: 240px;
         }
 
         .author {

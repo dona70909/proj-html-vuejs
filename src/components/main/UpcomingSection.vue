@@ -1,13 +1,13 @@
 <template>
     <section class="container-fluid bg-color">
-        <div class="row container-cards justify-content-center">
+        <div class="row container-cards p-lg-5 p-3 justify-content-center">
             <div class="col-12">
                 <div class="title text-center mb-4">
                     <h2 class="title">Upcoming Events</h2>
                     <h3 class="subtitle">Meet the authors in person</h3>
                 </div>
             </div>
-            <div class="col-4 px-4" v-for="(article,index) in upcomings" :key="index + 'upcoming' ">
+            <div class="col-lg-4 col-9 mb-4 mb-lg-0 px-lg-4 px-0" v-for="(article,index) in upcomings" :key="index + 'upcoming' ">
                 <div class="card">
                     <img class="card-img-top" :src="article.image" alt="Card image cap">
                     <div class="card-body text-center">
@@ -67,7 +67,7 @@ export default {
     font-size:1rem;
 }
 .container-cards {
-    padding: 3rem 7rem;
+    //padding: 3rem 7rem;
 
     .card {
         font-family: 'PT Serif', serif;

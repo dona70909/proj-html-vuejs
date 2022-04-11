@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
+
+
 
 import brands from "@fortawesome/fontawesome-free-brands"
 import {library}  from '@fortawesome/fontawesome-svg-core'

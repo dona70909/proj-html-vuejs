@@ -1,7 +1,7 @@
 <template>
     <section class="container-fluid bg-img">
         <div class="row container-row-padding justify-content-center align-items-center container-article">
-            <div class="col-4 d-flex flex-column align-content-center">
+            <div class="col-lg-4 col-12 d-flex flex-column align-content-center">
                 <div class="title-section text-center">
                     <h2 class="text-white title-article">Subscribe to My Newsletter</h2>
                     <h6 class="text-uppercase subtitle-article">Be Notified about book signing tour dates</h6>

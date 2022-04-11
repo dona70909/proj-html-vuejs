@@ -2,21 +2,21 @@
     <section class="container-fluid">
         <div class="row px-5 py-5">
 
-            <div class="col-6">
+            <div class="col-lg-6 col-12">
                 <div class="title-container">
                     <h3 class="title">What Critics Say</h3>
                     <h4 class="subtitle">Testimonial from around the world</h4>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="d-flex justify-content-end mb-2">
+            <div class="col-lg-6 col-12">
+                <div class="d-flex justify-content-end mb-lg-2 mb-0 w-100">
                     <button class="orange-btns">Read All Testimonials</button>
                 </div>
             </div>
         </div>
 
         <div class="row px-5 pb-5 container-articles">
-            <div class="col-8">
+            <div class="col-lg-8 col-12 mb-lg-0 mb-4">
                 <div class="card-container d-flex flex-column justify-content-center align-content-center text-white">
                     <h5>{{mainArticle.title}}</h5>
                     <hr>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">  
+            <div class="col-lg-4 col-12">  
                 <div class="box-article-container" v-for="(article,index) in  articles" :key=" index + 'article' ">
                     <div class="box">
                         <h4>{{article.title}}</h4>
