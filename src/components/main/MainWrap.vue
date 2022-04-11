@@ -18,6 +18,7 @@ import UpcomingSection from './UpcomingSection.vue'
 import SubscribeNews from './SubscribeNews.vue'
 import AboutAuthor from './AboutAuthor.vue'
 import RecentArticles from './RecentArticles.vue'
+
 export default {
     name:"MainWrap",
     components:{

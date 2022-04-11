@@ -42,7 +42,6 @@ name:"HeaderNav"
 @import './src/assets/scss/style.scss';
 
 ul{
-    list-style: none;
     li {
 
         border-top:4px solid transparent;
@@ -54,7 +53,7 @@ ul{
     }
     a{
         color:white;
-        text-decoration: none;
+        //text-decoration: none;
         line-height: 194px;
 
         &:hover {

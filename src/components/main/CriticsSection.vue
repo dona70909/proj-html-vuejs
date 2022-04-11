@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="link-article w-75 text-white mb-2">
-                        <a class="text-decoration-none" :href="article.link">
+                        <a :href="article.link">
                             <img class="me-3" :src="article.logo" alt="nytimes">{{article.author}}
                             <span class="newspaper-name">
                                 {{article.logoName}}
@@ -90,7 +90,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @import './src/assets/scss/style.scss';
 
 .title-container {

@@ -162,7 +162,7 @@ export default {
         
         a {
             color:#ffffff;
-            text-decoration: none;
+            //text-decoration: none;
         }
 
         p {

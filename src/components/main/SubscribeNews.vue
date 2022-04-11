@@ -73,7 +73,6 @@ export default {
         a {
             pointer-events: none;
             color:white;
-            text-decoration: none;
             font-weight: 700;
             font-size: .7rem;
         }
