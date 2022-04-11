@@ -101,11 +101,6 @@ export default {
         width:70%;
     }
 
-    ul {
-        list-style: none;
-        padding:0;
-    }
-
     .font-icon {
         font-weight: 900;
         font-size: 1.5rem;
