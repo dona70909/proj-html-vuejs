@@ -13,6 +13,7 @@ paragraph/text font-family: 'PT Serif', serif;
 
 a {
     text-decoration: none;
+    color:white;
 }
 
 ul {
@@ -20,3 +21,17 @@ ul {
     padding: 0;
 } 
 
+
+.green-btns {
+    border:none;
+    color: white;
+    background-color: $greenDark;
+    border-radius: 7px;
+}
+
+.orange-btns {
+    border: none;
+    color: white;
+    background-color: $saffronOrangeGold;
+    border-radius: 5px;
+}

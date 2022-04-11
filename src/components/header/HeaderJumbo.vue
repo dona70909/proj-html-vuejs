@@ -3,7 +3,7 @@
     <div class="row article-card-container">
         <!-- //# container left article -->
         <div class="col-8 article-card py-5">
-            <h3>Damon Vaugh</h3>
+            <h3 class="author-name">Damon Vaugh</h3>
             <TransitionGroup  name="slide-fade" tag="div" class="d-flex">
                 <div v-show="article.id == counter"  class="article" v-for="(article) in mainArticles" :key="article.id">
                     <div class="main-article">
@@ -154,7 +154,7 @@ export default {
             transition: 7s ease-in-out ;
         }
 
-        h3 {
+        h3.author-name {
             color:$saffronOrangeGold;
             font-size: 5rem;
             font-family: 'Caveat', cursive;
@@ -162,7 +162,6 @@ export default {
         
         a {
             color:#ffffff;
-            //text-decoration: none;
         }
 
         p {

@@ -8,7 +8,7 @@
                 </div>
                 <div class="d-flex justify-content-center align-items-center mb-3">
                     <input class="email-input me-3" type="text" placeholder="insert your mail...*">
-                    <button class="d-flex justify-content-center align-items-center">
+                    <button class="d-flex justify-content-center align-items-center green-btns">
                         <a href="#/">Subscribe now!</a>
                     </button>
                 </div>
@@ -67,12 +67,8 @@ export default {
 
     button {
         padding: .7rem 1.7rem;
-        background-color: $greenKeppel;
-        border:none;
-        border-radius: 10px;
         a {
             pointer-events: none;
-            color:white;
             font-weight: 700;
             font-size: .7rem;
         }

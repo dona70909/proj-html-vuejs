@@ -6,7 +6,7 @@
                     <h2 class="text-capitalize">Recent articles</h2>
                     <h6 class="text-uppercase">Read the latest entries</h6>
                 </div>
-                <button class="btn-all-artcles"><a href="#/">All articles</a></button>
+                <button class="btn-all-artcles orange-btns"><a href="#/">All articles</a></button>
             </div>
         </div>
         <div class="row px-5 wrapper-articles  justify-content-center">
@@ -103,18 +103,13 @@ p {
     }
 
     button {
-        background-color: #f4b429;
-        border:none;
-        padding: .5rem 3.6rem;
-        border-radius: 5px;
+        padding: .5rem 3.6rem;  
         display: flex;
         align-content: center;
         justify-content: center;
         
         a {
             font-size: .7rem;
-            color:white;
-            text-decoration: none;
             font-weight: 600;
         }
     }

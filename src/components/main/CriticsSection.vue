@@ -10,7 +10,7 @@
             </div>
             <div class="col-6">
                 <div class="d-flex justify-content-end mb-2">
-                    <button >Read All Testimonials</button>
+                    <button class="orange-btns">Read All Testimonials</button>
                 </div>
             </div>
         </div>
@@ -155,11 +155,7 @@ export default {
 /* Right boxes and button */
 
 button {
-    border: none;
-    color: white;
-    background-color: $saffronOrangeGold;
     padding: .3rem 1.5rem;
-    border-radius: 5px;
 }
 
 .box {
