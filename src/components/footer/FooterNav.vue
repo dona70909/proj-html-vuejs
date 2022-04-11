@@ -112,6 +112,10 @@ export default {
     .dark-white {
         color: $darkWhite;
     }
+
+    p {
+        font-size: .88rem;
+    }
 }
 
 </style>
