@@ -1,16 +1,20 @@
 <template>
     <section class="container-fluid bg-img">
         <div class="row container-row-padding justify-content-center align-items-center container-article">
-            <div class="col-6 text-center">
-                <h2 class="text-white title-article">Subscribe to My Newsletter</h2>
-                <h6 class="text-uppercase subtitle-article">Be Notified about book signing tour dates</h6>
-                <div class="d-flex justify-content-center align-items-center">
+            <div class="col-4 d-flex flex-column align-content-center">
+                <div class="title-section text-center">
+                    <h2 class="text-white title-article">Subscribe to My Newsletter</h2>
+                    <h6 class="text-uppercase subtitle-article">Be Notified about book signing tour dates</h6>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mb-3">
                     <input class="email-input me-3" type="text" placeholder="insert your mail...*">
                     <button class="d-flex justify-content-center align-items-center">
                         <a href="#/">Subscribe now!</a>
                     </button>
                 </div>
-                <p class="paragraph-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea sit ullam neque praesentium.</p>
+                <div class="container-paragraph">
+                    <p class="paragraph-article text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea sit ullam neque praesentium.</p>
+                </div>
             </div>
         </div>
     </section>
