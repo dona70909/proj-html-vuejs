@@ -2,16 +2,18 @@
     <!-- header's child component? -->
     <div class="row article-card-container ">
         <!-- //# container left article -->
-        <div class="col-8 article-card py-5">
+        <div class="col-8 article-card py-5 ">
             <h3>Damon Vaugh</h3>
-            <div v-show="article.id == counter" class="article" v-for="(article) in mainArticles" :key="article.id">
-                <div class="main-article">
-                    <p>
-                        {{article.paragraph}}
-                    </p>
-                    <address class="author"><a rel="author" :href="article.sourceLink">{{" - " + article.source}}</a></address>
+            <TransitionGroup  name="fade" tag="div" class="d-flex">
+                <div v-show="article.id == counter"  class="article" v-for="(article) in mainArticles" :key="article.id">
+                    <div class="main-article">
+                        <p>
+                            {{article.paragraph}}
+                        </p>
+                        <address class="author"><a rel="author" :href="article.sourceLink">{{" - " + article.source}}</a></address>
+                    </div>
                 </div>
-            </div>
+            </TransitionGroup>
             <!-- //& buttons -->
             <div class="scroll-btn-container d-flex">
                 <div @click="leftArticle()" class="scroll-btn arrow-left me-1 d-flex align-items-center justify-content-center">
@@ -120,6 +122,15 @@ export default {
             } else{
                 this.counter++;
             }
+        },
+
+        timeOutLeft() {
+            setTimeout(this.leftArticle,2000);
+        },
+
+
+        timeOutRight() {
+            setTimeout(this.rightArticle,2000);
         }
 
     }
@@ -135,6 +146,14 @@ export default {
     height: 100%; 
     .article-card {
         height: 100%;
+        .arrow-left {
+            transition: 7s ease-in-out;
+        }
+
+        .arrow-right {
+            transition: 7s ease-in-out ;
+        }
+
         h3 {
             color:$saffronOrangeGold;
             font-size: 5rem;
@@ -173,6 +192,15 @@ export default {
 
     }
 }
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .7s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+
 
 
 /* //#  ARTICLE Right kindle */
