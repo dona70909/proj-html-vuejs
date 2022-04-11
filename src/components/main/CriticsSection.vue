@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <div class="row px-5 pb-5">
+        <div class="row px-5 pb-5 container-articles">
             <div class="col-8">
                 <div class="card-container d-flex flex-column justify-content-center align-content-center text-white">
                     <h5>{{mainArticle.title}}</h5>
@@ -110,16 +110,14 @@ export default {
 }
 
 .card-container {
-    /* background-image: url('@/assets/img/event-04-400x240.jpg'); */
-    background-image: url('@/assets/img/event-04-600x359.jpg');
-    background-repeat:no-repeat;
-    //background-size: cover; 
-    object-fit: cover;
-    background-size: 100% 100%;
-    background-position: center center;
-    padding: 3rem; 
-    border-bottom-right-radius: 20px;
 
+    background-image: url('@/assets/img/testimonial2-2x.jpg');
+    padding: 3rem; 
+    border-bottom-right-radius: 40px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .link-article {
         background-color: black;
     }
