@@ -3,7 +3,7 @@
         <div class="row px-5 pb-2 pt-5 justify-content-center align-items-center container-section">
             <div class="col-12">
                 <div class="title text-center mb-5">
-                    <h2 class="title-section">Dig a little deeper into damon vaugh</h2>
+                    <h2 class="title-section">Dig a little deeper into damon vaughn</h2>
                     <h6 class="subtitle-section">Find out more about the author</h6>
                 </div>
             </div>
