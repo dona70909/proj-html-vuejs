@@ -133,10 +133,12 @@ export default {
 
 /* //#  ARTICLE LEFT NEW YORK TIMES */
 .article-card-container {
-    //padding-left:5rem;
+    
     height: 100%; 
+
     .article-card {
         height: 100%;
+
         .arrow-left {
             transition: 7s ease-in-out;
         }
