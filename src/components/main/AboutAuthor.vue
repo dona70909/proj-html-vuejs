@@ -14,7 +14,7 @@
                 <img :src="card.image" :alt="card.title">
                 <div class="text-card bottom-0 align-self-end text-center pb-4 position-absolute">
                     <h2 class="title-card pb-2">{{card.title}}</h2>
-                    <hr class="w-50">
+                    <hr>
                     <p>{{card.subtitle}}</p>
                 </div>
             </div>
@@ -90,9 +90,10 @@ export default {
             bottom: 0; 
             hr {
                 margin: 0 auto;
-                height:.3rem;
+                height:.2rem;
                 color:$osloGray;
                 padding: 0 3rem;
+                width:5%;
             }
 
             .title-card {
